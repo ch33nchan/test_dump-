@@ -17,11 +17,22 @@ import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
 
-ACCOUNT_URL = st.secrets.get("AZURE_ACCOUNT_URL", "https://dashprodstore.blob.core.windows.net")
-SAS_TOKEN   = st.secrets.get("AZURE_SAS_TOKEN",   "")
-CONTAINER   = st.secrets.get("AZURE_CONTAINER",   "auto-dubbing")
-QC_STORE    = os.path.join(os.path.dirname(__file__), "qc_scores.json")
-MMS_MODEL   = "facebook/mms-1b-fl102"
+ACCOUNT_URL    = st.secrets.get("AZURE_ACCOUNT_URL", "https://dashprodstore.blob.core.windows.net")
+SAS_TOKEN      = st.secrets.get("AZURE_SAS_TOKEN",   "")
+CONTAINER      = st.secrets.get("AZURE_CONTAINER",   "auto-dubbing")
+QC_STORE       = os.path.join(os.path.dirname(__file__), "qc_scores.json")
+MMS_MODEL      = "facebook/mms-1b-fl102"
+PIPELINE_CACHE = os.path.join(os.path.dirname(__file__), "pipeline_cache.json")
+
+# Load pre-baked pipeline data (no Azure needed for display)
+@st.cache_resource
+def load_pipeline_cache():
+    try:
+        return json.load(open(PIPELINE_CACHE, encoding="utf-8"))
+    except:
+        return {}
+
+AZURE_AVAILABLE = bool(SAS_TOKEN)
 
 SCRIPT_BLOCKS = [
     (0x0C00, 0x0C7F, "Telugu",    "tel"),
@@ -79,11 +90,20 @@ st.set_page_config(page_title="Dubbing Evals", layout="wide")
 
 # ── azure ─────────────────────────────────────────────────────────────────────
 @st.cache_resource
+@st.cache_resource
 def get_container():
+    if not AZURE_AVAILABLE:
+        return None
     return BlobServiceClient(account_url=ACCOUNT_URL, credential=SAS_TOKEN) \
            .get_container_client(CONTAINER)
 
 def list_episodes(show_id):
+    # use local pipeline cache first
+    pc = load_pipeline_cache()
+    if pc:
+        return sorted(pc.keys())
+    if not AZURE_AVAILABLE:
+        return []
     seen = set()
     prefix = f"shows/dubbing/{show_id}/episodes/"
     for b in get_container().list_blobs(name_starts_with=prefix):
@@ -93,6 +113,8 @@ def list_episodes(show_id):
 
 @st.cache_data(ttl=300)
 def fetch_bytes(path):
+    if not AZURE_AVAILABLE:
+        return b""
     return get_container().get_blob_client(path).download_blob().readall()
 
 @st.cache_data(ttl=300)
@@ -103,23 +125,20 @@ def fetch_json(path):
 @st.cache_data(ttl=3600, show_spinner=False)
 def load_voice_qc(voice_id):
     try:    return fetch_json(f"voice_qc/{voice_id}.json")
-    except: return None
+    except: return {}
 
-# ── show-level overview (lightweight, no audio) ───────────────────────────────
+# ── show-level overview ───────────────────────────────────────────────────────
 @st.cache_data(ttl=300, show_spinner=False)
 def episode_full_score(show_id, episode):
-    """
-    Full EQI using cached speech metrics (UTMOS, BLASER, MuRIL, pause)
-    plus pipeline timing data. Falls back to timing-only if cache is empty.
-    """
-    base = f"shows/dubbing/{show_id}/episodes/{episode}/intermediate"
-    c    = get_container()
-    def safe(p):
-        try:    return json.loads(c.get_blob_client(p).download_blob().readall())
-        except: return None
-
-    fit      = safe(f"{base}/tts/final_fit.json")
-    attempts = safe(f"{base}/tts/iterative_attempts.json") or {}
+    """Full EQI from pipeline_cache.json + speech_cache.json. No Azure needed."""
+    pc = load_pipeline_cache()
+    ep_data = pc.get(episode, {})
+    fit_raw  = ep_data.get("fit")
+    attempts = ep_data.get("attempts") or {}
+    if not fit_raw: return None
+    dialogs = fit_raw.get("dialogs", [])
+    N = len(dialogs)
+    if not N: return None
     if not fit: return None
     dialogs = fit.get("dialogs", [])
     N = len(dialogs)
@@ -195,38 +214,41 @@ def load_show_overview(show_id, episodes):
 # ── load full pipeline data ───────────────────────────────────────────────────
 @st.cache_data(ttl=120)
 def load_pipeline(show_id, episode):
-    base  = f"shows/dubbing/{show_id}/episodes/{episode}/intermediate"
-    ebase = f"shows/dubbing/{show_id}/editor/episodes/{episode}"
-    c     = get_container()
-
-    def safe(path):
-        try:    return json.loads(c.get_blob_client(path).download_blob().readall())
-        except: return None
-
-    # list per-dialog WAVs from pipeline
+    # read from local pipeline_cache.json first — no Azure needed
+    pc       = load_pipeline_cache()
+    ep_data  = pc.get(episode, {})
     wav_paths = {}
-    for b in c.list_blobs(name_starts_with=f"{base}/tts/per_dialog/"):
-        fname = b.name.split("/")[-1]
-        if fname.endswith(".wav"):
-            did = fname.replace(".wav", "")
-            wav_paths[did] = b.name
 
-    speakers_raw = safe(f"{base}/episode_refinement/episode_refined_speakers.json")
+    if AZURE_AVAILABLE:
+        # also list WAV paths from blob for audio playback
+        base = f"shows/dubbing/{show_id}/episodes/{episode}/intermediate"
+        try:
+            for b in get_container().list_blobs(name_starts_with=f"{base}/tts/per_dialog/"):
+                fname = b.name.split("/")[-1]
+                if fname.endswith(".wav"):
+                    wav_paths[fname.replace(".wav", "")] = b.name
+        except:
+            pass
+
     return {
-        "fit":      safe(f"{base}/tts/final_fit.json"),
-        "source":   safe(f"{base}/transcripts/cleaned.json"),
-        "target":   safe(f"{base}/translation/translated.json"),
-        "attempts": safe(f"{base}/tts/iterative_attempts.json"),
-        "editor":   safe(f"{ebase}/transcript.json"),
+        "fit":       ep_data.get("fit"),
+        "source":    ep_data.get("source"),
+        "target":    ep_data.get("target"),
+        "attempts":  ep_data.get("attempts"),
+        "editor":    ep_data.get("editor"),
+        "speakers":  ep_data.get("speakers", []),
         "wav_paths": wav_paths,
-        "speakers": (speakers_raw or {}).get("speakers", []),
     }
 
 # ── audio quality ─────────────────────────────────────────────────────────────
 @st.cache_data(ttl=3600, show_spinner=False)
 def audio_quality(path):
+    if not AZURE_AVAILABLE:
+        return None
     import librosa
     ab = fetch_bytes(path)
+    if not ab:
+        return None
     with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as f:
         f.write(ab); tmp = f.name
     try:

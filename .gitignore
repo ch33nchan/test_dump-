@@ -1,0 +1,18 @@
+# secrets — never commit
+.streamlit/secrets.toml
+
+# local venv
+/tmp/sonar_env/
+__pycache__/
+*.pyc
+.env
+
+# large repos
+auto-dubbing-growth/
+growth-content-assist/
+frameo-evals/
+wav2vec2_checkpoints/
+
+# temp files
+/tmp/
+*.log

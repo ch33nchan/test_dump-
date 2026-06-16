@@ -1,0 +1,4170 @@
+{
+  "2bcdfe58:001": {
+    "1": {
+      "blaser": 3.244,
+      "utmos": 2.438,
+      "emotion_tags": [
+        "crying"
+      ],
+      "grammar": 23.9,
+      "pause_align": 0.851,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    },
+    "2": {
+      "blaser": 3.816,
+      "utmos": 3.052,
+      "emotion_tags": [
+        "crying"
+      ],
+      "grammar": 24.1,
+      "pause_align": 0.5,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    },
+    "3": {
+      "blaser": 3.159,
+      "utmos": 3.358,
+      "emotion_tags": [
+        "angry"
+      ],
+      "grammar": 27.6,
+      "pause_align": 0.797,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    },
+    "4": {
+      "blaser": 3.846,
+      "utmos": 3.369,
+      "emotion_tags": [
+        "sobs"
+      ],
+      "grammar": 35.9,
+      "pause_align": 0.5,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    },
+    "5": {
+      "blaser": 3.392,
+      "utmos": 3.839,
+      "emotion_tags": [
+        "crying",
+        "defiant"
+      ],
+      "grammar": 40.6,
+      "pause_align": 0.93,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    },
+    "6": {
+      "blaser": 3.861,
+      "utmos": 2.514,
+      "emotion_tags": [
+        "yells"
+      ],
+      "grammar": 21,
+      "pause_align": 0.5,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    },
+    "7": {
+      "blaser": 3.825,
+      "utmos": 4.046,
+      "emotion_tags": [
+        "angry"
+      ],
+      "grammar": 24.8,
+      "pause_align": 0.775,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    },
+    "8": {
+      "blaser": 3.432,
+      "utmos": 3.074,
+      "emotion_tags": [
+        "groans",
+        "annoyed"
+      ],
+      "grammar": 24.1,
+      "pause_align": 0.448,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    },
+    "9": {
+      "blaser": 3.285,
+      "utmos": 2.382,
+      "emotion_tags": [
+        "crying"
+      ],
+      "grammar": 18.4,
+      "pause_align": 0.516,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    },
+    "10": {
+      "blaser": 3.237,
+      "utmos": 3.483,
+      "emotion_tags": [
+        "confused"
+      ],
+      "grammar": 30.3,
+      "pause_align": 0.522,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    },
+    "11": {
+      "blaser": 3.785,
+      "utmos": 2.943,
+      "emotion_tags": [
+        "mutters",
+        "sighs"
+      ],
+      "grammar": 24.7,
+      "pause_align": 0.244,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    },
+    "12": {
+      "blaser": 3.458,
+      "utmos": 3.552,
+      "emotion_tags": [
+        "confused"
+      ],
+      "grammar": 26,
+      "pause_align": 0.658,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    },
+    "13": {
+      "blaser": 3.423,
+      "utmos": 3.86,
+      "emotion_tags": [
+        "angry"
+      ],
+      "grammar": 18.6,
+      "pause_align": 1.0,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    },
+    "14": {
+      "blaser": 3.682,
+      "utmos": 2.076,
+      "emotion_tags": [
+        "gasps",
+        "whispers"
+      ],
+      "grammar": 24.6,
+      "pause_align": 0.291,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    },
+    "15": {
+      "blaser": 3.656,
+      "utmos": 3.728,
+      "emotion_tags": [
+        "frustrated"
+      ],
+      "grammar": 28.6,
+      "pause_align": 0.651,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    },
+    "16": {
+      "blaser": 3.713,
+      "utmos": 3.578,
+      "emotion_tags": [
+        "pleading"
+      ],
+      "grammar": 27.5,
+      "pause_align": 0.583,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    },
+    "17": {
+      "blaser": 3.649,
+      "utmos": 2.952,
+      "emotion_tags": [
+        "groans"
+      ],
+      "grammar": 22.3,
+      "pause_align": 0.686,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    },
+    "18": {
+      "blaser": 3.475,
+      "utmos": 2.896,
+      "emotion_tags": [
+        "exasperated"
+      ],
+      "grammar": 24.9,
+      "pause_align": 0.548,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    },
+    "19": {
+      "blaser": 4.04,
+      "utmos": 2.647,
+      "emotion_tags": [
+        "happy"
+      ],
+      "grammar": 17.3,
+      "pause_align": 0.952,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    },
+    "20": {
+      "blaser": 3.764,
+      "utmos": 4.003,
+      "emotion_tags": [
+        "surprised",
+        "confused"
+      ],
+      "grammar": 13,
+      "pause_align": 0.929,
+      "emotion": null,
+      "emotion_results": [
+        {
+          "error": "'ModuleDict' object has no attribute 'compute_features'"
+        }
+      ]
+    }
+  },
+  "2bcdfe58:002": {
+    "1": {
+      "utmos": 3.644,
+      "grammar": 15,
+      "blaser": 3.365964412689209,
+      "pause_align": 0.831
+    },
+    "2": {
+      "utmos": 3.349,
+      "grammar": 17.3,
+      "blaser": 4.063061714172363,
+      "pause_align": 1.0
+    },
+    "3": {
+      "utmos": 3.686,
+      "grammar": 20.1,
+      "blaser": 3.1611878871917725,
+      "pause_align": 0.887
+    },
+    "4": {
+      "utmos": 3.184,
+      "grammar": 25.3,
+      "blaser": 3.1584529876708984,
+      "pause_align": 0.488
+    },
+    "5": {
+      "utmos": 3.275,
+      "grammar": 54.1,
+      "blaser": 3.866702079772949,
+      "pause_align": 0.834
+    },
+    "6": {
+      "utmos": 2.331,
+      "grammar": 29.8,
+      "blaser": 2.9301342964172363,
+      "pause_align": 0.653
+    },
+    "7": {
+      "utmos": 3.931,
+      "grammar": 29.8,
+      "blaser": 3.3652448654174805,
+      "pause_align": 0.5
+    },
+    "8": {
+      "utmos": 3.831,
+      "grammar": 24.9,
+      "blaser": 3.158242702484131,
+      "pause_align": 0.417
+    },
+    "9": {
+      "utmos": 3.123,
+      "grammar": 25.3,
+      "blaser": 2.7634100914001465,
+      "pause_align": 0.064
+    },
+    "10": {
+      "utmos": 3.553,
+      "grammar": 34.9,
+      "blaser": 2.7316222190856934,
+      "pause_align": 0.665
+    },
+    "11": {
+      "utmos": 3.723,
+      "grammar": 28.8,
+      "blaser": 2.3025126457214355,
+      "pause_align": 0.338
+    },
+    "12": {
+      "utmos": 3.965,
+      "grammar": 13.4,
+      "blaser": 2.429014205932617,
+      "pause_align": 1.0
+    },
+    "13": {
+      "utmos": 4.141,
+      "grammar": 12.9,
+      "blaser": 2.085559844970703,
+      "pause_align": 0.882
+    },
+    "14": {
+      "utmos": 2.888,
+      "grammar": 24.2,
+      "blaser": 1.758716344833374,
+      "pause_align": 0.803
+    },
+    "15": {
+      "utmos": 3.843,
+      "grammar": 22.5,
+      "blaser": 2.931429386138916,
+      "pause_align": 0.5
+    },
+    "16": {
+      "utmos": 3.695,
+      "grammar": 22,
+      "blaser": 2.6668808460235596,
+      "pause_align": 0.868
+    },
+    "17": {
+      "utmos": 3.786,
+      "grammar": 28.1,
+      "blaser": 2.3448562622070312,
+      "pause_align": 0.5
+    },
+    "18": {
+      "utmos": 3.168,
+      "grammar": 22.6,
+      "blaser": 2.2897424697875977,
+      "pause_align": 0.764
+    },
+    "19": {
+      "utmos": 2.882,
+      "grammar": 29.1,
+      "blaser": 3.6510415077209473,
+      "pause_align": 1.0
+    },
+    "20": {
+      "utmos": 3.338,
+      "grammar": 17.7,
+      "blaser": 2.7353084087371826,
+      "pause_align": 0.5
+    },
+    "21": {
+      "utmos": 3.555,
+      "grammar": 27.1,
+      "blaser": 2.0433688163757324,
+      "pause_align": 0.731
+    },
+    "22": {
+      "utmos": 3.228,
+      "grammar": 30.3,
+      "blaser": 1.7963144779205322,
+      "pause_align": 0.825
+    },
+    "23": {
+      "utmos": 2.777,
+      "grammar": 25,
+      "blaser": 2.10001802444458,
+      "pause_align": 0.982
+    },
+    "24": {
+      "utmos": 3.694,
+      "grammar": null,
+      "blaser": 3.6782214641571045,
+      "pause_align": 0.5
+    }
+  },
+  "2bcdfe58:003": {
+    "1": {
+      "utmos": 3.445,
+      "grammar": 24.1,
+      "blaser": 3.2648837566375732,
+      "pause_align": 0.829
+    },
+    "2": {
+      "utmos": 3.659,
+      "grammar": 20.9,
+      "blaser": 3.3531575202941895,
+      "pause_align": 0.714
+    },
+    "3": {
+      "utmos": 3.497,
+      "grammar": 20,
+      "blaser": 3.4235520362854004,
+      "pause_align": 0.5
+    },
+    "4": {
+      "utmos": 3.144,
+      "grammar": 26.1,
+      "blaser": 3.436455249786377,
+      "pause_align": 0.428
+    },
+    "5": {
+      "utmos": 4.233,
+      "grammar": 35.7,
+      "blaser": 3.2512004375457764,
+      "pause_align": 0.823
+    },
+    "6": {
+      "utmos": 2.868,
+      "grammar": 28.9,
+      "blaser": 3.577695369720459,
+      "pause_align": 0.748
+    },
+    "7": {
+      "utmos": 3.991,
+      "grammar": 28.5,
+      "blaser": 3.133418083190918,
+      "pause_align": 0.723
+    },
+    "8": {
+      "utmos": 2.897,
+      "grammar": 9,
+      "blaser": 3.870304584503174,
+      "pause_align": 0.948
+    },
+    "9": {
+      "utmos": 2.306,
+      "grammar": 24.5,
+      "blaser": 3.5765700340270996,
+      "pause_align": 0.5
+    },
+    "10": {
+      "utmos": 2.96,
+      "grammar": 14.3,
+      "blaser": 4.076796531677246,
+      "pause_align": 0.845
+    },
+    "11": {
+      "utmos": 2.984,
+      "grammar": 21.5,
+      "blaser": 3.146657943725586,
+      "pause_align": 0.763
+    },
+    "12": {
+      "utmos": 3.811,
+      "grammar": 31.4,
+      "blaser": 3.3138372898101807,
+      "pause_align": 0.601
+    },
+    "13": {
+      "utmos": 4.062,
+      "grammar": 22.9,
+      "blaser": 3.295781373977661,
+      "pause_align": 0.968
+    },
+    "14": {
+      "utmos": 4.03,
+      "grammar": 23.9,
+      "blaser": 2.476884365081787,
+      "pause_align": 0.66
+    },
+    "15": {
+      "utmos": 3.613,
+      "grammar": 49.6,
+      "blaser": 3.7098937034606934,
+      "pause_align": 0.654
+    },
+    "16": {
+      "utmos": 3.862,
+      "grammar": 21.2,
+      "blaser": 3.109663486480713,
+      "pause_align": 0.461
+    },
+    "17": {
+      "utmos": 3.508,
+      "grammar": 28.5,
+      "blaser": 3.1451146602630615,
+      "pause_align": 0.694
+    },
+    "18": {
+      "utmos": 4.136,
+      "grammar": 41.7,
+      "blaser": 2.790370464324951,
+      "pause_align": 0.844
+    },
+    "19": {
+      "utmos": 3.957,
+      "grammar": 45.9,
+      "blaser": 3.5183298587799072,
+      "pause_align": 0.511
+    },
+    "20": {
+      "utmos": 3.307,
+      "grammar": 27.1,
+      "blaser": 3.276010274887085,
+      "pause_align": 0.657
+    },
+    "21": {
+      "utmos": 3.932,
+      "grammar": 29.1,
+      "blaser": 2.5877885818481445,
+      "pause_align": 0.658
+    },
+    "22": {
+      "utmos": 2.583,
+      "grammar": 24.4,
+      "blaser": 3.5217318534851074,
+      "pause_align": 0.5
+    },
+    "23": {
+      "utmos": 3.554,
+      "grammar": 20.9,
+      "blaser": 3.1438863277435303,
+      "pause_align": 0.954
+    },
+    "24": {
+      "utmos": 3.197,
+      "grammar": 26.6,
+      "blaser": 4.126107215881348,
+      "pause_align": 1.0
+    },
+    "25": {
+      "utmos": 3.791,
+      "grammar": 21,
+      "blaser": 2.8141942024230957,
+      "pause_align": 0.5
+    }
+  },
+  "2bcdfe58:004": {
+    "1": {
+      "utmos": 2.102,
+      "grammar": 23.8,
+      "blaser": 2.4365577697753906,
+      "pause_align": 0.973
+    },
+    "2": {
+      "utmos": 2.257,
+      "grammar": 26.7,
+      "blaser": 1.8826020956039429,
+      "pause_align": 0.299
+    },
+    "3": {
+      "utmos": 3.311,
+      "grammar": 22.8,
+      "blaser": 2.4303228855133057,
+      "pause_align": 0.991
+    },
+    "4": {
+      "utmos": 4.191,
+      "grammar": 22.6,
+      "blaser": 2.740832567214966,
+      "pause_align": 0.684
+    },
+    "5": {
+      "utmos": 2.782,
+      "grammar": 27.9,
+      "blaser": 2.113538980484009,
+      "pause_align": 0.337
+    },
+    "6": {
+      "utmos": 3.216,
+      "grammar": 29.4,
+      "blaser": 2.22843861579895,
+      "pause_align": 0.747
+    },
+    "7": {
+      "utmos": 2.706,
+      "grammar": 23.6,
+      "blaser": 2.2797951698303223,
+      "pause_align": 0.666
+    },
+    "8": {
+      "utmos": 3.75,
+      "grammar": 22.5,
+      "blaser": 2.6277740001678467,
+      "pause_align": 0.701
+    },
+    "9": {
+      "utmos": 2.412,
+      "grammar": 24.6,
+      "blaser": 2.1285367012023926,
+      "pause_align": 0.794
+    },
+    "10": {
+      "utmos": 3.491,
+      "grammar": 31.3,
+      "blaser": 2.6986336708068848,
+      "pause_align": 0.255
+    },
+    "11": {
+      "utmos": 3.165,
+      "grammar": 37.4,
+      "blaser": 2.528958559036255,
+      "pause_align": 0.653
+    },
+    "12": {
+      "utmos": 2.629,
+      "grammar": 25.5,
+      "blaser": 2.26790714263916,
+      "pause_align": 0.735
+    },
+    "13": {
+      "utmos": 2.913,
+      "grammar": 30.1,
+      "blaser": 2.687516212463379,
+      "pause_align": 0.502
+    },
+    "14": {
+      "utmos": 3.701,
+      "grammar": 20.8,
+      "blaser": 2.0814383029937744,
+      "pause_align": 0.587
+    },
+    "15": {
+      "utmos": 2.928,
+      "grammar": 23.9,
+      "blaser": 2.5719332695007324,
+      "pause_align": 0.5
+    },
+    "16": {
+      "utmos": 1.809,
+      "grammar": null,
+      "blaser": 3.227142333984375,
+      "pause_align": 1.0
+    },
+    "17": {
+      "utmos": 3.307,
+      "grammar": 16.3,
+      "blaser": 2.934380054473877,
+      "pause_align": 0.5
+    },
+    "18": {
+      "utmos": 3.05,
+      "grammar": 23.5,
+      "blaser": 3.249354839324951,
+      "pause_align": 0.738
+    },
+    "19": {
+      "utmos": 3.696,
+      "grammar": 21.6,
+      "blaser": 2.503438949584961,
+      "pause_align": 0.591
+    },
+    "20": {
+      "utmos": 3.167,
+      "grammar": 21.2,
+      "blaser": 2.318171501159668,
+      "pause_align": 0.857
+    },
+    "21": {
+      "utmos": 3.405,
+      "grammar": 34.1,
+      "blaser": 2.2541446685791016,
+      "pause_align": 0.5
+    },
+    "22": {
+      "utmos": 2.337,
+      "grammar": 13.7,
+      "blaser": 2.0344340801239014,
+      "pause_align": 1.0
+    },
+    "23": {
+      "utmos": 2.937,
+      "grammar": 22.2,
+      "blaser": 2.601295232772827,
+      "pause_align": 0.5
+    }
+  },
+  "2bcdfe58:005": {
+    "1": {
+      "utmos": 3.106,
+      "grammar": 24.2,
+      "blaser": 3.351423501968384,
+      "pause_align": 0.535
+    },
+    "2": {
+      "utmos": 2.561,
+      "grammar": 30.1,
+      "blaser": 2.986126661300659,
+      "pause_align": 0.528
+    },
+    "3": {
+      "utmos": 4.336,
+      "grammar": 38.2,
+      "blaser": 3.6470911502838135,
+      "pause_align": 0.774
+    },
+    "4": {
+      "utmos": 3.857,
+      "grammar": 21.6,
+      "blaser": 3.171931028366089,
+      "pause_align": 0.72
+    },
+    "5": {
+      "utmos": 2.784,
+      "grammar": 25,
+      "blaser": 3.6620514392852783,
+      "pause_align": 0.827
+    },
+    "6": {
+      "utmos": 3.225,
+      "grammar": 31.5,
+      "blaser": 3.198530673980713,
+      "pause_align": 0.491
+    },
+    "7": {
+      "utmos": 3.022,
+      "grammar": 37.3,
+      "blaser": 3.7659342288970947,
+      "pause_align": 0.6
+    },
+    "8": {
+      "utmos": 3.438,
+      "grammar": 23.8,
+      "blaser": 3.7452800273895264,
+      "pause_align": 0.864
+    },
+    "9": {
+      "utmos": 3.586,
+      "grammar": 16.1,
+      "blaser": 3.568314552307129,
+      "pause_align": 0.5
+    },
+    "10": {
+      "utmos": 3.047,
+      "grammar": 23.6,
+      "blaser": 3.2563438415527344,
+      "pause_align": 0.485
+    },
+    "11": {
+      "utmos": 3.216,
+      "grammar": 12.2,
+      "blaser": 3.3348636627197266,
+      "pause_align": 0.5
+    },
+    "12": {
+      "utmos": 1.735,
+      "grammar": 27.7,
+      "blaser": 3.031733989715576,
+      "pause_align": 0.364
+    },
+    "13": {
+      "utmos": 3.171,
+      "grammar": 41.8,
+      "blaser": 3.6776418685913086,
+      "pause_align": 0.639
+    },
+    "14": {
+      "utmos": 3.297,
+      "grammar": 30.3,
+      "blaser": 3.8735265731811523,
+      "pause_align": 0.791
+    },
+    "15": {
+      "utmos": 3.61,
+      "grammar": 26.5,
+      "blaser": 4.0830488204956055,
+      "pause_align": 0.917
+    },
+    "16": {
+      "utmos": 1.743,
+      "grammar": null,
+      "blaser": 3.1224591732025146,
+      "pause_align": 0.5
+    },
+    "17": {
+      "utmos": 4.107,
+      "grammar": 14,
+      "blaser": 3.541402578353882,
+      "pause_align": 0.5
+    },
+    "18": {
+      "utmos": 3.014,
+      "grammar": 13.7,
+      "blaser": 3.1271164417266846,
+      "pause_align": 1.0
+    },
+    "19": {
+      "utmos": 4.215,
+      "grammar": 11,
+      "blaser": 2.998889207839966,
+      "pause_align": 0.5
+    },
+    "20": {
+      "utmos": 2.959,
+      "grammar": 14.1,
+      "blaser": 3.0521554946899414,
+      "pause_align": 0.738
+    },
+    "21": {
+      "utmos": 3.208,
+      "grammar": 21.1,
+      "blaser": 3.0453109741210938,
+      "pause_align": 0.872
+    },
+    "22": {
+      "utmos": 3.272,
+      "grammar": 21.5,
+      "blaser": 2.745310068130493,
+      "pause_align": 0.801
+    }
+  },
+  "2bcdfe58:006": {
+    "1": {
+      "utmos": 3.957,
+      "grammar": 23.8,
+      "blaser": 2.6700282096862793,
+      "pause_align": 0.715
+    },
+    "2": {
+      "utmos": 4.011,
+      "grammar": 28.3,
+      "blaser": 3.259260416030884,
+      "pause_align": 0.811
+    },
+    "3": {
+      "utmos": 2.718,
+      "grammar": 11.2,
+      "blaser": 3.0822954177856445,
+      "pause_align": 0.5
+    },
+    "4": {
+      "utmos": 3.881,
+      "grammar": 28.4,
+      "blaser": 3.171689987182617,
+      "pause_align": 0.649
+    },
+    "5": {
+      "utmos": 3.618,
+      "grammar": 28.5,
+      "blaser": 3.224092960357666,
+      "pause_align": 0.923
+    },
+    "6": {
+      "utmos": 3.971,
+      "grammar": 39.4,
+      "blaser": 3.1829891204833984,
+      "pause_align": 0.627
+    },
+    "7": {
+      "utmos": 2.456,
+      "grammar": 26,
+      "blaser": 3.0944666862487793,
+      "pause_align": 0.27
+    },
+    "8": {
+      "utmos": 2.125,
+      "grammar": 18.6,
+      "blaser": 2.6688129901885986,
+      "pause_align": 0.924
+    },
+    "9": {
+      "utmos": 4.014,
+      "grammar": 45.4,
+      "blaser": 3.140415906906128,
+      "pause_align": 0.727
+    },
+    "10": {
+      "utmos": 4.13,
+      "grammar": 20.8,
+      "blaser": 2.7256932258605957,
+      "pause_align": 0.5
+    },
+    "11": {
+      "utmos": 3.601,
+      "grammar": 30.9,
+      "blaser": 3.5775585174560547,
+      "pause_align": 0.5
+    },
+    "12": {
+      "utmos": 2.162,
+      "grammar": 21.8,
+      "blaser": 2.961944818496704,
+      "pause_align": 0.95
+    },
+    "13": {
+      "utmos": 3.603,
+      "grammar": 31.1,
+      "blaser": 3.054046869277954,
+      "pause_align": 1.0
+    },
+    "14": {
+      "utmos": 3.146,
+      "grammar": 32.9,
+      "blaser": 2.9090399742126465,
+      "pause_align": 0.454
+    },
+    "15": {
+      "utmos": 2.911,
+      "grammar": 26.9,
+      "blaser": 3.180919647216797,
+      "pause_align": 0.632
+    },
+    "16": {
+      "utmos": 2.699,
+      "grammar": 19.8,
+      "blaser": 3.855637550354004,
+      "pause_align": 0.886
+    },
+    "17": {
+      "utmos": 3.564,
+      "grammar": 28.2,
+      "blaser": 3.2294762134552,
+      "pause_align": 0.721
+    },
+    "18": {
+      "utmos": 3.157,
+      "grammar": 27.1,
+      "blaser": 3.2459874153137207,
+      "pause_align": 0.79
+    },
+    "19": {
+      "utmos": 3.496,
+      "grammar": 24.2,
+      "blaser": 2.845616102218628,
+      "pause_align": 0.923
+    },
+    "20": {
+      "utmos": 3.459,
+      "grammar": 27.9,
+      "blaser": 2.87312650680542,
+      "pause_align": 0.799
+    }
+  },
+  "2bcdfe58:007": {
+    "1": {
+      "utmos": 3.48,
+      "grammar": 20.1,
+      "blaser": 2.6362321376800537,
+      "pause_align": 0.5
+    },
+    "2": {
+      "utmos": 2.196,
+      "grammar": null,
+      "blaser": 2.470417022705078,
+      "pause_align": 0.5
+    },
+    "3": {
+      "utmos": 3.291,
+      "grammar": 14.7,
+      "blaser": 2.7897660732269287,
+      "pause_align": 0.787
+    },
+    "4": {
+      "utmos": 3.068,
+      "grammar": 19.7,
+      "blaser": 2.9437150955200195,
+      "pause_align": 1.0
+    },
+    "5": {
+      "utmos": 3.132,
+      "grammar": 20.2,
+      "blaser": 4.115813255310059,
+      "pause_align": 0.551
+    },
+    "6": {
+      "utmos": 3.305,
+      "grammar": 31,
+      "blaser": 2.8360681533813477,
+      "pause_align": 0.829
+    },
+    "7": {
+      "utmos": 3.536,
+      "grammar": 19.6,
+      "blaser": 3.7095086574554443,
+      "pause_align": 0.5
+    },
+    "8": {
+      "utmos": 3.144,
+      "grammar": 21.3,
+      "blaser": 3.1905508041381836,
+      "pause_align": 0.716
+    },
+    "9": {
+      "utmos": 3.823,
+      "grammar": 35.4,
+      "blaser": 3.4504594802856445,
+      "pause_align": 0.561
+    },
+    "10": {
+      "utmos": 3.32,
+      "grammar": 21.6,
+      "blaser": 3.5177783966064453,
+      "pause_align": 0.5
+    },
+    "11": {
+      "utmos": 3.363,
+      "grammar": null,
+      "blaser": 2.8686227798461914,
+      "pause_align": 0.5
+    },
+    "12": {
+      "utmos": 4.056,
+      "grammar": 19.4,
+      "blaser": 3.39707612991333,
+      "pause_align": 0.432
+    },
+    "13": {
+      "utmos": 3.729,
+      "grammar": 27.2,
+      "blaser": 3.395951747894287,
+      "pause_align": 0.5
+    },
+    "14": {
+      "utmos": 3.364,
+      "grammar": 32.2,
+      "blaser": 3.398865222930908,
+      "pause_align": 0.623
+    },
+    "15": {
+      "utmos": 3.032,
+      "grammar": 33.7,
+      "blaser": 3.7261409759521484,
+      "pause_align": 0.854
+    },
+    "16": {
+      "utmos": 3.449,
+      "grammar": 26.3,
+      "blaser": 3.6739583015441895,
+      "pause_align": 0.702
+    },
+    "17": {
+      "utmos": 2.835,
+      "grammar": 13.8,
+      "blaser": 3.2147061824798584,
+      "pause_align": 0.5
+    },
+    "18": {
+      "utmos": 3.445,
+      "grammar": 19.7,
+      "blaser": 3.1191208362579346,
+      "pause_align": 0.539
+    },
+    "19": {
+      "utmos": 3.215,
+      "grammar": 21.5,
+      "blaser": 3.4581029415130615,
+      "pause_align": 0.567
+    },
+    "20": {
+      "utmos": 3.186,
+      "grammar": 12.7,
+      "blaser": 3.3854379653930664,
+      "pause_align": 0.5
+    },
+    "21": {
+      "utmos": 3.364,
+      "grammar": 31.6,
+      "blaser": 3.4271655082702637,
+      "pause_align": 0.616
+    },
+    "22": {
+      "utmos": 2.923,
+      "grammar": 11.7,
+      "blaser": 3.0893518924713135,
+      "pause_align": 0.963
+    },
+    "23": {
+      "utmos": 3.482,
+      "grammar": 25.2,
+      "blaser": 3.097163677215576,
+      "pause_align": 0.5
+    },
+    "24": {
+      "utmos": 1.89,
+      "grammar": 15.9,
+      "blaser": 3.475266456604004,
+      "pause_align": 0.5
+    },
+    "25": {
+      "utmos": 3.293,
+      "grammar": 19.6,
+      "blaser": 3.3735098838806152,
+      "pause_align": 0.9
+    }
+  },
+  "2bcdfe58:008": {
+    "1": {
+      "utmos": 1.472,
+      "grammar": null,
+      "blaser": 3.397291421890259,
+      "pause_align": 0.5
+    },
+    "2": {
+      "utmos": 2.069,
+      "grammar": 18.1,
+      "blaser": 3.5230767726898193,
+      "pause_align": 1.0
+    },
+    "3": {
+      "utmos": 3.059,
+      "grammar": 15.1,
+      "blaser": 2.5663504600524902,
+      "pause_align": 0.819
+    },
+    "4": {
+      "utmos": 3.253,
+      "grammar": 13.6,
+      "blaser": 3.4886646270751953,
+      "pause_align": 0.946
+    },
+    "5": {
+      "utmos": 2.746,
+      "grammar": 22.4,
+      "blaser": 2.729526996612549,
+      "pause_align": 0.989
+    },
+    "6": {
+      "utmos": 3.764,
+      "grammar": 26.2,
+      "blaser": 3.4332656860351562,
+      "pause_align": 0.847
+    },
+    "7": {
+      "utmos": 3.782,
+      "grammar": 25.8,
+      "blaser": 2.8958091735839844,
+      "pause_align": 0.222
+    },
+    "8": {
+      "utmos": 3.38,
+      "grammar": 27.3,
+      "blaser": 2.8745107650756836,
+      "pause_align": 0.5
+    },
+    "9": {
+      "utmos": 2.812,
+      "grammar": 30.6,
+      "blaser": 3.242805004119873,
+      "pause_align": 0.848
+    },
+    "10": {
+      "utmos": 4.248,
+      "grammar": 22.7,
+      "blaser": 3.0649540424346924,
+      "pause_align": 0.77
+    },
+    "11": {
+      "utmos": 3.734,
+      "grammar": 27.8,
+      "blaser": 3.597700595855713,
+      "pause_align": 0.805
+    },
+    "12": {
+      "utmos": 2.524,
+      "grammar": 37.5,
+      "blaser": 4.119629383087158,
+      "pause_align": 0.502
+    },
+    "13": {
+      "utmos": 3.401,
+      "grammar": 20.6,
+      "blaser": 3.6729254722595215,
+      "pause_align": 0.5
+    },
+    "14": {
+      "utmos": 3.922,
+      "grammar": 27.6,
+      "blaser": 3.230440616607666,
+      "pause_align": 0.877
+    },
+    "15": {
+      "utmos": 2.949,
+      "grammar": 19.3,
+      "blaser": 2.9534130096435547,
+      "pause_align": 0.783
+    },
+    "16": {
+      "utmos": 2.937,
+      "grammar": 21.5,
+      "blaser": 2.7598323822021484,
+      "pause_align": 0.713
+    },
+    "17": {
+      "utmos": 2.713,
+      "grammar": 21,
+      "blaser": 3.5529837608337402,
+      "pause_align": 1.0
+    },
+    "18": {
+      "utmos": 2.508,
+      "grammar": 11.1,
+      "blaser": 3.5018856525421143,
+      "pause_align": 1.0
+    },
+    "19": {
+      "utmos": 3.401,
+      "grammar": 29.2,
+      "blaser": 3.407151699066162,
+      "pause_align": 0.75
+    },
+    "20": {
+      "utmos": 3.873,
+      "grammar": 21,
+      "blaser": 3.0932719707489014,
+      "pause_align": 0.663
+    },
+    "21": {
+      "utmos": 3.43,
+      "grammar": 38.4,
+      "blaser": 3.682645320892334,
+      "pause_align": 0.73
+    },
+    "22": {
+      "utmos": 3.178,
+      "grammar": 34.2,
+      "blaser": 3.826958656311035,
+      "pause_align": 0.596
+    },
+    "23": {
+      "utmos": 3.43,
+      "grammar": 25.1,
+      "blaser": 3.692829132080078,
+      "pause_align": 0.555
+    },
+    "24": {
+      "utmos": 2.67,
+      "grammar": 18.2,
+      "blaser": 3.171156644821167,
+      "pause_align": 0.876
+    },
+    "25": {
+      "utmos": 1.957,
+      "grammar": 35,
+      "blaser": 3.3877034187316895,
+      "pause_align": 0.657
+    },
+    "26": {
+      "utmos": 3.324,
+      "grammar": null,
+      "blaser": 3.49885630607605,
+      "pause_align": 1.0
+    },
+    "27": {
+      "utmos": 2.081,
+      "grammar": 17.2,
+      "blaser": 2.97786283493042,
+      "pause_align": 0.681
+    },
+    "28": {
+      "utmos": 3.324,
+      "grammar": null,
+      "blaser": 3.5803475379943848,
+      "pause_align": 1.0
+    }
+  },
+  "2bcdfe58:009": {
+    "1": {
+      "utmos": 1.942,
+      "grammar": 25,
+      "blaser": 3.279067039489746,
+      "pause_align": 0.781
+    },
+    "2": {
+      "utmos": 2.309,
+      "grammar": null,
+      "blaser": 3.49885630607605,
+      "pause_align": 1.0
+    },
+    "3": {
+      "utmos": 3.558,
+      "grammar": 32.7,
+      "blaser": 3.788881301879883,
+      "pause_align": 0.5
+    },
+    "4": {
+      "utmos": 3.226,
+      "grammar": null,
+      "blaser": 3.2892584800720215,
+      "pause_align": 0.5
+    },
+    "5": {
+      "utmos": 3.435,
+      "grammar": 24.9,
+      "blaser": 3.322904348373413,
+      "pause_align": 0.503
+    },
+    "6": {
+      "utmos": 2.959,
+      "grammar": 24.1,
+      "blaser": 3.538674831390381,
+      "pause_align": 0.747
+    },
+    "7": {
+      "utmos": 3.928,
+      "grammar": 32,
+      "blaser": 3.2005386352539062,
+      "pause_align": 0.71
+    },
+    "8": {
+      "utmos": 3.752,
+      "grammar": 34.8,
+      "blaser": 3.240126848220825,
+      "pause_align": 0.906
+    },
+    "9": {
+      "utmos": 3.294,
+      "grammar": 31,
+      "blaser": 2.960204601287842,
+      "pause_align": 0.633
+    },
+    "10": {
+      "utmos": 2.399,
+      "grammar": 18.9,
+      "blaser": 3.103020191192627,
+      "pause_align": 0.903
+    },
+    "11": {
+      "utmos": 3.886,
+      "grammar": 19.9,
+      "blaser": 3.1066293716430664,
+      "pause_align": 0.5
+    },
+    "12": {
+      "utmos": 3.752,
+      "grammar": 27,
+      "blaser": 2.914828300476074,
+      "pause_align": 0.842
+    },
+    "13": {
+      "utmos": 2.982,
+      "grammar": 27.3,
+      "blaser": 3.312624931335449,
+      "pause_align": 0.841
+    },
+    "14": {
+      "utmos": 3.673,
+      "grammar": 25.4,
+      "blaser": 3.1688284873962402,
+      "pause_align": 0.5
+    },
+    "15": {
+      "utmos": 3.578,
+      "grammar": 29,
+      "blaser": 2.867979049682617,
+      "pause_align": 0.702
+    },
+    "16": {
+      "utmos": 2.219,
+      "grammar": 39.6,
+      "blaser": 2.898930549621582,
+      "pause_align": 0.887
+    },
+    "17": {
+      "utmos": 3.413,
+      "grammar": 28,
+      "blaser": 3.857741355895996,
+      "pause_align": 0.782
+    },
+    "18": {
+      "utmos": 3.346,
+      "grammar": 27.2,
+      "blaser": 3.2843918800354004,
+      "pause_align": 0.822
+    }
+  },
+  "2bcdfe58:010": {
+    "1": {
+      "utmos": 3.757,
+      "grammar": 21.5,
+      "blaser": 3.537712335586548,
+      "pause_align": 0.671
+    },
+    "2": {
+      "utmos": 3.954,
+      "grammar": 20.5,
+      "blaser": 2.9235424995422363,
+      "pause_align": 0.5
+    },
+    "3": {
+      "utmos": 3.384,
+      "grammar": 24.6,
+      "blaser": 3.266526937484741,
+      "pause_align": 0.814
+    },
+    "4": {
+      "utmos": 3.51,
+      "grammar": 22.1,
+      "blaser": 3.8464746475219727,
+      "pause_align": 0.5
+    },
+    "5": {
+      "utmos": 3.588,
+      "grammar": 33.1,
+      "blaser": 3.4493918418884277,
+      "pause_align": 0.884
+    },
+    "6": {
+      "utmos": 3.996,
+      "grammar": 26.1,
+      "blaser": 2.7721705436706543,
+      "pause_align": 0.853
+    },
+    "7": {
+      "utmos": 3.93,
+      "grammar": 24.5,
+      "blaser": 3.529325246810913,
+      "pause_align": 0.974
+    },
+    "8": {
+      "utmos": 3.032,
+      "grammar": 39.8,
+      "blaser": 3.2241158485412598,
+      "pause_align": 0.959
+    },
+    "9": {
+      "utmos": 3.723,
+      "grammar": 26,
+      "blaser": 2.972956895828247,
+      "pause_align": 0.879
+    },
+    "10": {
+      "utmos": 3.429,
+      "grammar": 19.5,
+      "blaser": 3.4403905868530273,
+      "pause_align": 0.5
+    },
+    "11": {
+      "utmos": 3.404,
+      "grammar": 18.1,
+      "blaser": 2.893220901489258,
+      "pause_align": 0.992
+    },
+    "12": {
+      "utmos": 2.953,
+      "grammar": 20.1,
+      "blaser": 3.1189513206481934,
+      "pause_align": 0.556
+    },
+    "13": {
+      "utmos": 4.004,
+      "grammar": 23.2,
+      "blaser": 3.3119454383850098,
+      "pause_align": 0.917
+    },
+    "14": {
+      "utmos": 3.349,
+      "grammar": 28.7,
+      "blaser": 3.2745699882507324,
+      "pause_align": 0.568
+    },
+    "15": {
+      "utmos": 3.086,
+      "grammar": 26.4,
+      "blaser": 3.226410150527954,
+      "pause_align": 0.981
+    },
+    "16": {
+      "utmos": 2.938,
+      "grammar": 28.2,
+      "blaser": 2.740668535232544,
+      "pause_align": 0.786
+    },
+    "17": {
+      "utmos": 3.813,
+      "grammar": 29.2,
+      "blaser": 3.360346794128418,
+      "pause_align": 0.655
+    },
+    "18": {
+      "utmos": 3.712,
+      "grammar": 38.9,
+      "blaser": 3.3391427993774414,
+      "pause_align": 0.787
+    },
+    "19": {
+      "utmos": 3.131,
+      "grammar": 37.9,
+      "blaser": 3.3715901374816895,
+      "pause_align": 0.941
+    },
+    "20": {
+      "utmos": 3.765,
+      "grammar": 25.1,
+      "blaser": 3.7010812759399414,
+      "pause_align": 0.693
+    },
+    "21": {
+      "utmos": 2.27,
+      "grammar": 15.9,
+      "blaser": 3.161447286605835,
+      "pause_align": 0.5
+    },
+    "22": {
+      "utmos": 3.677,
+      "grammar": 21.1,
+      "blaser": 3.48307466506958,
+      "pause_align": 0.5
+    },
+    "23": {
+      "utmos": 1.361,
+      "grammar": null,
+      "blaser": 3.522831439971924,
+      "pause_align": 0.5
+    },
+    "24": {
+      "utmos": 1.378,
+      "grammar": 13.1,
+      "blaser": 3.163649559020996,
+      "pause_align": 0.5
+    },
+    "25": {
+      "utmos": 3.32,
+      "grammar": 26,
+      "blaser": 3.2854676246643066,
+      "pause_align": 0.785
+    },
+    "26": {
+      "utmos": 2.729,
+      "grammar": 24.7,
+      "blaser": 3.1684510707855225,
+      "pause_align": 0.802
+    },
+    "27": {
+      "utmos": 2.691,
+      "grammar": 19,
+      "blaser": 3.140733480453491,
+      "pause_align": 0.5
+    },
+    "28": {
+      "utmos": 3.92,
+      "grammar": 33.7,
+      "blaser": 2.924530029296875,
+      "pause_align": 0.618
+    },
+    "29": {
+      "utmos": 1.745,
+      "grammar": 14.1,
+      "blaser": 2.7777631282806396,
+      "pause_align": 0.961
+    },
+    "30": {
+      "utmos": 3.885,
+      "grammar": 24.5,
+      "blaser": 3.22047758102417,
+      "pause_align": 0.645
+    },
+    "31": {
+      "utmos": 3.701,
+      "grammar": 26.9,
+      "blaser": 2.9869003295898438,
+      "pause_align": 0.768
+    },
+    "32": {
+      "utmos": 3.17,
+      "grammar": 33.6,
+      "blaser": 2.845764636993408,
+      "pause_align": 0.5
+    }
+  },
+  "2bcdfe58:011": {
+    "1": {
+      "utmos": 3.53,
+      "grammar": 14.3,
+      "blaser": 3.24027419090271,
+      "pause_align": 1.0
+    },
+    "2": {
+      "utmos": 3.163,
+      "grammar": 13.6,
+      "blaser": 3.522306442260742,
+      "pause_align": 0.813
+    },
+    "3": {
+      "utmos": 3.228,
+      "grammar": 10.6,
+      "blaser": 3.42683744430542,
+      "pause_align": 0.681
+    },
+    "4": {
+      "utmos": 3.079,
+      "grammar": 26.9,
+      "blaser": 3.186758518218994,
+      "pause_align": 0.807
+    },
+    "5": {
+      "utmos": 3.576,
+      "grammar": 27.1,
+      "blaser": 3.1334872245788574,
+      "pause_align": 0.637
+    },
+    "6": {
+      "utmos": 3.486,
+      "grammar": 22.8,
+      "blaser": 2.9099643230438232,
+      "pause_align": 0.5
+    },
+    "7": {
+      "utmos": 3.621,
+      "grammar": 41.2,
+      "blaser": 3.64143705368042,
+      "pause_align": 0.5
+    },
+    "8": {
+      "utmos": 3.493,
+      "grammar": 30.9,
+      "blaser": 2.855152130126953,
+      "pause_align": 0.826
+    },
+    "9": {
+      "utmos": 3.462,
+      "grammar": 16.5,
+      "blaser": 3.9710772037506104,
+      "pause_align": 1.0
+    },
+    "10": {
+      "utmos": 3.612,
+      "grammar": 27.6,
+      "blaser": 3.657783031463623,
+      "pause_align": 1.0
+    },
+    "11": {
+      "utmos": 3.575,
+      "grammar": 14.8,
+      "blaser": 2.6618361473083496,
+      "pause_align": 0.96
+    },
+    "12": {
+      "utmos": 4.045,
+      "grammar": 27.8,
+      "blaser": 3.239555835723877,
+      "pause_align": 0.835
+    },
+    "13": {
+      "utmos": 3.235,
+      "grammar": 24.3,
+      "blaser": 2.703853130340576,
+      "pause_align": 0.77
+    }
+  },
+  "2bcdfe58:012": {
+    "1": {
+      "utmos": 2.478,
+      "grammar": 21.3,
+      "blaser": 2.87795352935791,
+      "pause_align": 0.715
+    },
+    "2": {
+      "utmos": 2.325,
+      "grammar": 10.8,
+      "blaser": 3.4278879165649414,
+      "pause_align": 0.732
+    },
+    "3": {
+      "utmos": 3.575,
+      "grammar": 26,
+      "blaser": 2.8986077308654785,
+      "pause_align": 0.872
+    },
+    "4": {
+      "utmos": 3.224,
+      "grammar": 23.8,
+      "blaser": 3.0534329414367676,
+      "pause_align": 0.784
+    },
+    "5": {
+      "utmos": 4.057,
+      "grammar": 20,
+      "blaser": 3.573853015899658,
+      "pause_align": 0.496
+    },
+    "6": {
+      "utmos": 3.909,
+      "grammar": 32.3,
+      "blaser": 3.377211093902588,
+      "pause_align": 0.472
+    },
+    "7": {
+      "utmos": 4.035,
+      "grammar": 22.5,
+      "blaser": 2.868128776550293,
+      "pause_align": 0.974
+    },
+    "8": {
+      "utmos": 3.937,
+      "grammar": 18.3,
+      "blaser": 2.9166762828826904,
+      "pause_align": 0.973
+    },
+    "9": {
+      "utmos": 4.089,
+      "grammar": 24.3,
+      "blaser": 2.7423059940338135,
+      "pause_align": 0.749
+    },
+    "10": {
+      "utmos": 3.304,
+      "grammar": 32.9,
+      "blaser": 2.982218027114868,
+      "pause_align": 0.869
+    },
+    "11": {
+      "utmos": 3.987,
+      "grammar": 32.5,
+      "blaser": 3.0462169647216797,
+      "pause_align": 0.744
+    },
+    "12": {
+      "utmos": 3.579,
+      "grammar": 22.2,
+      "blaser": 3.038989543914795,
+      "pause_align": 0.606
+    },
+    "13": {
+      "utmos": 3.638,
+      "grammar": 33.9,
+      "blaser": 3.82901930809021,
+      "pause_align": 0.5
+    },
+    "14": {
+      "utmos": 3.596,
+      "grammar": 16.1,
+      "blaser": 2.878483295440674,
+      "pause_align": 0.714
+    },
+    "15": {
+      "utmos": 3.161,
+      "grammar": 21.9,
+      "blaser": 3.2204432487487793,
+      "pause_align": 0.5
+    },
+    "16": {
+      "utmos": 3.908,
+      "grammar": 20.2,
+      "blaser": 3.1377487182617188,
+      "pause_align": 0.525
+    },
+    "17": {
+      "utmos": 2.643,
+      "grammar": 26.4,
+      "blaser": 3.450185775756836,
+      "pause_align": 0.335
+    }
+  },
+  "2bcdfe58:013": {
+    "1": {
+      "utmos": 1.3,
+      "grammar": 40.1,
+      "blaser": 3.0963611602783203,
+      "pause_align": 1.0
+    },
+    "2": {
+      "utmos": 1.239,
+      "grammar": 94.5,
+      "blaser": 3.471944808959961,
+      "pause_align": 0.937
+    },
+    "3": {
+      "utmos": 3.558,
+      "grammar": 22,
+      "blaser": 3.3526084423065186,
+      "pause_align": 0.5
+    },
+    "4": {
+      "utmos": 3.074,
+      "grammar": null,
+      "blaser": 3.2245099544525146,
+      "pause_align": 0.5
+    },
+    "5": {
+      "utmos": 3.722,
+      "grammar": 24.8,
+      "blaser": 3.5625786781311035,
+      "pause_align": 0.5
+    },
+    "6": {
+      "utmos": 4.204,
+      "grammar": 24.2,
+      "blaser": 3.301194667816162,
+      "pause_align": 0.73
+    },
+    "7": {
+      "utmos": 3.515,
+      "grammar": 31.9,
+      "blaser": 3.2167282104492188,
+      "pause_align": 0.77
+    },
+    "8": {
+      "utmos": 4.202,
+      "grammar": 31.4,
+      "blaser": 3.4073398113250732,
+      "pause_align": 1.0
+    },
+    "9": {
+      "utmos": 3.737,
+      "grammar": null,
+      "blaser": 2.700099468231201,
+      "pause_align": 0.797
+    },
+    "10": {
+      "utmos": 3.224,
+      "grammar": 17.5,
+      "blaser": 2.382580280303955,
+      "pause_align": 0.691
+    },
+    "11": {
+      "utmos": 2.412,
+      "grammar": 25,
+      "blaser": 2.6380319595336914,
+      "pause_align": 0.838
+    },
+    "12": {
+      "utmos": 3.236,
+      "grammar": 22,
+      "blaser": 1.854641079902649,
+      "pause_align": 0.458
+    },
+    "13": {
+      "utmos": 2.723,
+      "grammar": 17.2,
+      "blaser": 2.652207851409912,
+      "pause_align": 0.5
+    },
+    "14": {
+      "utmos": 3.399,
+      "grammar": 13.3,
+      "blaser": 1.6306102275848389,
+      "pause_align": 0.5
+    },
+    "15": {
+      "utmos": 2.508,
+      "grammar": 18.7,
+      "blaser": 1.4749140739440918,
+      "pause_align": 0.816
+    },
+    "16": {
+      "utmos": 3.61,
+      "grammar": 21,
+      "blaser": 2.7772915363311768,
+      "pause_align": 1.0
+    },
+    "17": {
+      "utmos": 3.719,
+      "grammar": 33,
+      "blaser": 2.1797168254852295,
+      "pause_align": 0.752
+    },
+    "18": {
+      "utmos": 3.432,
+      "grammar": 27.9,
+      "blaser": 1.8384490013122559,
+      "pause_align": 0.5
+    },
+    "19": {
+      "utmos": 3.253,
+      "grammar": 35.5,
+      "blaser": 2.335552453994751,
+      "pause_align": 0.614
+    },
+    "20": {
+      "utmos": 2.209,
+      "grammar": 43.1,
+      "blaser": 2.258784770965576,
+      "pause_align": 0.606
+    },
+    "21": {
+      "utmos": 1.446,
+      "grammar": null,
+      "blaser": 1.9381190538406372,
+      "pause_align": 1.0
+    },
+    "22": {
+      "utmos": 3.709,
+      "grammar": 29.5,
+      "blaser": 2.5723533630371094,
+      "pause_align": 0.877
+    },
+    "23": {
+      "utmos": 3.045,
+      "grammar": 19.8,
+      "blaser": 2.2558765411376953,
+      "pause_align": 0.878
+    },
+    "24": {
+      "utmos": 4.112,
+      "grammar": 28.3,
+      "blaser": 2.2531611919403076,
+      "pause_align": 0.819
+    },
+    "25": {
+      "utmos": 1.392,
+      "grammar": 23.2,
+      "blaser": 2.6196022033691406,
+      "pause_align": 1.0
+    },
+    "26": {
+      "utmos": 3.911,
+      "grammar": 11.8,
+      "blaser": 1.5964690446853638,
+      "pause_align": 1.0
+    },
+    "27": {
+      "utmos": 3.456,
+      "grammar": 20.2,
+      "blaser": 2.3533363342285156,
+      "pause_align": 0.875
+    },
+    "28": {
+      "utmos": 4.273,
+      "grammar": 38.6,
+      "blaser": 1.8189729452133179,
+      "pause_align": 0.5
+    },
+    "29": {
+      "utmos": 1.254,
+      "grammar": 13.8,
+      "blaser": 2.7739970684051514,
+      "pause_align": 0.5
+    },
+    "30": {
+      "utmos": 1.237,
+      "grammar": 40.4,
+      "pause_align": 0.831
+    },
+    "31": {
+      "utmos": 3.511,
+      "grammar": 11.8,
+      "pause_align": 0.5
+    },
+    "32": {
+      "utmos": 3.178,
+      "grammar": 28.8,
+      "pause_align": 0.817
+    },
+    "33": {
+      "utmos": 3.7,
+      "grammar": 9.9,
+      "pause_align": 0.5
+    },
+    "34": {
+      "utmos": 3.438,
+      "grammar": 26.5,
+      "pause_align": 0.792
+    },
+    "35": {
+      "utmos": 2.511,
+      "grammar": 25.7,
+      "pause_align": 0.787
+    }
+  },
+  "2bcdfe58:014": {
+    "1": {
+      "utmos": 3.632,
+      "grammar": 20.4,
+      "blaser": 2.6770176887512207,
+      "pause_align": 0.674
+    },
+    "2": {
+      "utmos": 3.309,
+      "grammar": 23.8,
+      "blaser": 2.597524642944336,
+      "pause_align": 0.879
+    },
+    "3": {
+      "utmos": 2.844,
+      "grammar": 19.6,
+      "blaser": 2.5051639080047607,
+      "pause_align": 0.853
+    },
+    "4": {
+      "utmos": 3.68,
+      "grammar": 27.9,
+      "blaser": 2.3040738105773926,
+      "pause_align": 0.85
+    },
+    "5": {
+      "utmos": 3.671,
+      "grammar": 12.7,
+      "blaser": 2.4142229557037354,
+      "pause_align": 0.5
+    },
+    "6": {
+      "utmos": 3.136,
+      "grammar": 19,
+      "blaser": 1.8548622131347656,
+      "pause_align": 0.5
+    },
+    "7": {
+      "utmos": 2.969,
+      "grammar": 26.5,
+      "blaser": 2.4218263626098633,
+      "pause_align": 0.863
+    },
+    "8": {
+      "utmos": 3.537,
+      "grammar": 34.1,
+      "blaser": 1.8866100311279297,
+      "pause_align": 0.742
+    },
+    "9": {
+      "utmos": 4.01,
+      "grammar": 27.9,
+      "blaser": 1.9761379957199097,
+      "pause_align": 0.79
+    },
+    "10": {
+      "utmos": 3.619,
+      "grammar": 27.8,
+      "blaser": 1.9068496227264404,
+      "pause_align": 0.736
+    },
+    "11": {
+      "utmos": 3.552,
+      "grammar": 34.9,
+      "blaser": 2.321546792984009,
+      "pause_align": 0.685
+    },
+    "12": {
+      "utmos": 3.79,
+      "grammar": 31.5,
+      "blaser": 2.70963191986084,
+      "pause_align": 0.917
+    },
+    "13": {
+      "utmos": 3.923,
+      "grammar": 19.6,
+      "blaser": 2.0961968898773193,
+      "pause_align": 0.5
+    },
+    "14": {
+      "utmos": 3.18,
+      "grammar": 24.8,
+      "blaser": 2.58884334564209,
+      "pause_align": 0.522
+    },
+    "15": {
+      "utmos": 3.202,
+      "grammar": 39.4,
+      "blaser": 2.905588150024414,
+      "pause_align": 0.5
+    },
+    "16": {
+      "utmos": 3.144,
+      "grammar": 14.8,
+      "blaser": 1.890404462814331,
+      "pause_align": 1.0
+    },
+    "17": {
+      "utmos": 3.238,
+      "grammar": 25.2,
+      "blaser": 2.238112688064575,
+      "pause_align": 0.479
+    }
+  },
+  "2bcdfe58:015": {
+    "1": {
+      "utmos": 4.281,
+      "grammar": 15.6,
+      "blaser": 3.097616672515869,
+      "pause_align": 0.5
+    },
+    "2": {
+      "utmos": 3.062,
+      "grammar": 21.1,
+      "blaser": 2.1458613872528076,
+      "pause_align": 0.69
+    },
+    "3": {
+      "utmos": 3.248,
+      "grammar": 34.7,
+      "blaser": 3.0614113807678223,
+      "pause_align": 0.574
+    },
+    "4": {
+      "utmos": 4.23,
+      "grammar": 22.6,
+      "blaser": 2.4138941764831543,
+      "pause_align": 0.692
+    },
+    "5": {
+      "utmos": 2.776,
+      "grammar": 35,
+      "blaser": 1.9917446374893188,
+      "pause_align": 0.817
+    },
+    "6": {
+      "utmos": 3.332,
+      "grammar": 31.4,
+      "blaser": 1.992422342300415,
+      "pause_align": 0.5
+    },
+    "7": {
+      "utmos": 3.433,
+      "grammar": 25.3,
+      "blaser": 2.2557995319366455,
+      "pause_align": 0.488
+    },
+    "8": {
+      "utmos": 3.572,
+      "grammar": 38,
+      "blaser": 2.87465238571167,
+      "pause_align": 0.858
+    },
+    "9": {
+      "utmos": 4.243,
+      "grammar": 32.6,
+      "blaser": 2.464615821838379,
+      "pause_align": 0.829
+    },
+    "10": {
+      "utmos": 2.976,
+      "grammar": 19.2,
+      "pause_align": 0.831
+    },
+    "11": {
+      "utmos": 2.991,
+      "grammar": 22.1,
+      "pause_align": 0.651
+    },
+    "12": {
+      "utmos": 3.616,
+      "grammar": 36.3,
+      "pause_align": 0.222
+    },
+    "13": {
+      "utmos": 3.881,
+      "grammar": 21.3,
+      "pause_align": 0.5
+    },
+    "14": {
+      "utmos": 3.109,
+      "grammar": 41.2,
+      "pause_align": 0.632
+    }
+  },
+  "2bcdfe58:016": {
+    "1": {
+      "utmos": 3.397,
+      "grammar": 26.4,
+      "blaser": 2.796828508377075,
+      "pause_align": 0.428
+    },
+    "2": {
+      "utmos": 2.721,
+      "grammar": 18.2,
+      "blaser": 2.6586761474609375,
+      "pause_align": 0.599
+    },
+    "3": {
+      "utmos": 2.876,
+      "grammar": 22.9,
+      "blaser": 3.3451638221740723,
+      "pause_align": 0.646
+    },
+    "4": {
+      "utmos": 2.45,
+      "grammar": 22.5,
+      "blaser": 3.631094455718994,
+      "pause_align": 0.92
+    },
+    "5": {
+      "utmos": 2.607,
+      "grammar": 27.6,
+      "blaser": 3.6817872524261475,
+      "pause_align": 0.869
+    },
+    "6": {
+      "utmos": 1.557,
+      "grammar": 5,
+      "blaser": 3.7018940448760986,
+      "pause_align": 1.0
+    },
+    "7": {
+      "utmos": 3.16,
+      "grammar": 9,
+      "blaser": 3.2985482215881348,
+      "pause_align": 0.5
+    },
+    "8": {
+      "utmos": 2.698,
+      "grammar": 31.5,
+      "blaser": 3.7388393878936768,
+      "pause_align": 0.234
+    },
+    "9": {
+      "utmos": 3.01,
+      "grammar": 14.6,
+      "blaser": 2.9942431449890137,
+      "pause_align": 0.523
+    },
+    "10": {
+      "utmos": 3.038,
+      "grammar": 17,
+      "blaser": 3.290517568588257,
+      "pause_align": 0.847
+    },
+    "11": {
+      "utmos": 2.996,
+      "grammar": 41.5,
+      "blaser": 3.613887310028076,
+      "pause_align": 0.656
+    },
+    "12": {
+      "utmos": 3.258,
+      "grammar": 22.3,
+      "blaser": 3.057720422744751,
+      "pause_align": 0.623
+    },
+    "13": {
+      "utmos": 3.923,
+      "grammar": 27,
+      "blaser": 3.0473968982696533,
+      "pause_align": 0.496
+    },
+    "14": {
+      "utmos": 3.138,
+      "grammar": 25.5,
+      "blaser": 3.583773374557495,
+      "pause_align": 0.762
+    },
+    "15": {
+      "utmos": 3.759,
+      "grammar": 24.9,
+      "blaser": 3.826472759246826,
+      "pause_align": 0.615
+    }
+  },
+  "2bcdfe58:017": {
+    "1": {
+      "utmos": 3.02,
+      "grammar": 29.4,
+      "blaser": 3.1277480125427246,
+      "pause_align": 0.596
+    },
+    "2": {
+      "utmos": 3.372,
+      "grammar": 36.2,
+      "blaser": 3.6137962341308594,
+      "pause_align": 0.827
+    },
+    "3": {
+      "utmos": 3.611,
+      "grammar": 21.6,
+      "blaser": 3.278646945953369,
+      "pause_align": 0.897
+    },
+    "4": {
+      "utmos": 2.783,
+      "grammar": 23.2,
+      "blaser": 2.579024076461792,
+      "pause_align": 0.801
+    },
+    "5": {
+      "utmos": 3.653,
+      "grammar": 18.3,
+      "blaser": 3.0092101097106934,
+      "pause_align": 0.738
+    },
+    "6": {
+      "utmos": 3.763,
+      "grammar": 33.6,
+      "blaser": 3.5390677452087402,
+      "pause_align": 0.481
+    },
+    "7": {
+      "utmos": 2.278,
+      "grammar": null,
+      "blaser": 3.5803475379943848,
+      "pause_align": 0.5
+    },
+    "8": {
+      "utmos": 3.2,
+      "grammar": 30.2,
+      "blaser": 3.158310890197754,
+      "pause_align": 0.813
+    },
+    "9": {
+      "utmos": 4.045,
+      "grammar": 14.9,
+      "blaser": 3.1134917736053467,
+      "pause_align": 0.5
+    },
+    "10": {
+      "utmos": 3.804,
+      "grammar": 27.1,
+      "blaser": 3.398202657699585,
+      "pause_align": 0.741
+    },
+    "11": {
+      "utmos": 2.687,
+      "grammar": 17.1,
+      "blaser": 3.554145336151123,
+      "pause_align": 0.666
+    },
+    "12": {
+      "utmos": 3.202,
+      "grammar": 14,
+      "blaser": 3.3434345722198486,
+      "pause_align": 1.0
+    }
+  },
+  "2bcdfe58:018": {
+    "1": {
+      "utmos": 3.79,
+      "grammar": 20.8,
+      "blaser": 2.3826069831848145,
+      "pause_align": 0.588
+    },
+    "2": {
+      "utmos": 3.701,
+      "grammar": 21.6,
+      "blaser": 2.4310669898986816,
+      "pause_align": 0.5
+    },
+    "3": {
+      "utmos": 3.368,
+      "grammar": 33.6,
+      "blaser": 3.6265430450439453,
+      "pause_align": 0.853
+    },
+    "4": {
+      "utmos": 3.348,
+      "grammar": 24.2,
+      "blaser": 2.9023866653442383,
+      "pause_align": 0.55
+    },
+    "5": {
+      "utmos": 4.075,
+      "grammar": 20.2,
+      "blaser": 2.995532512664795,
+      "pause_align": 1.0
+    },
+    "6": {
+      "utmos": 3.47,
+      "grammar": 38.7,
+      "blaser": 3.3336124420166016,
+      "pause_align": 0.119
+    },
+    "7": {
+      "utmos": 2.958,
+      "grammar": 21.3,
+      "blaser": 3.5045175552368164,
+      "pause_align": 0.849
+    },
+    "8": {
+      "utmos": 3.704,
+      "grammar": 19.7,
+      "blaser": 3.3767781257629395,
+      "pause_align": 0.5
+    },
+    "9": {
+      "utmos": 3.81,
+      "grammar": 16.3,
+      "blaser": 3.225614547729492,
+      "pause_align": 0.5
+    },
+    "10": {
+      "utmos": 4.227,
+      "grammar": 19.5,
+      "blaser": 2.8740406036376953,
+      "pause_align": 0.5
+    },
+    "11": {
+      "utmos": 3.945,
+      "grammar": 37.5,
+      "blaser": 2.6452488899230957,
+      "pause_align": 0.873
+    },
+    "12": {
+      "utmos": 3.887,
+      "grammar": 20.3,
+      "blaser": 3.028566837310791,
+      "pause_align": 0.944
+    },
+    "13": {
+      "utmos": 3.924,
+      "grammar": 33.4,
+      "blaser": 3.4267983436584473,
+      "pause_align": 0.614
+    },
+    "14": {
+      "utmos": 3.287,
+      "grammar": 14.5,
+      "blaser": 2.613859176635742,
+      "pause_align": 0.5
+    },
+    "15": {
+      "utmos": 3.935,
+      "grammar": 20.6,
+      "blaser": 3.642111301422119,
+      "pause_align": 0.5
+    },
+    "16": {
+      "utmos": 3.783,
+      "grammar": 21.8,
+      "blaser": 3.242788791656494,
+      "pause_align": 0.761
+    },
+    "17": {
+      "utmos": 4.002,
+      "grammar": 20,
+      "blaser": 3.1326403617858887,
+      "pause_align": 0.5
+    },
+    "18": {
+      "utmos": 3.128,
+      "grammar": 27,
+      "blaser": 3.5066051483154297,
+      "pause_align": 0.893
+    },
+    "19": {
+      "utmos": 3.615,
+      "grammar": 38.2,
+      "blaser": 4.0608134269714355,
+      "pause_align": 0.5
+    },
+    "20": {
+      "utmos": 3.167,
+      "grammar": 28.6,
+      "blaser": 3.218127489089966,
+      "pause_align": 0.848
+    },
+    "21": {
+      "utmos": 3.806,
+      "grammar": 25.7,
+      "blaser": 2.742675304412842,
+      "pause_align": 0.889
+    },
+    "22": {
+      "utmos": 3.011,
+      "grammar": 34.5,
+      "blaser": 3.6400561332702637,
+      "pause_align": 0.638
+    },
+    "23": {
+      "utmos": 4.121,
+      "grammar": 17.3,
+      "blaser": 3.2044949531555176,
+      "pause_align": 0.5
+    }
+  },
+  "2bcdfe58:019": {
+    "1": {
+      "utmos": 3.123,
+      "grammar": 22.4,
+      "blaser": 3.409393310546875,
+      "pause_align": 0.699
+    },
+    "2": {
+      "utmos": 3.736,
+      "grammar": 25.6,
+      "blaser": 3.425379991531372,
+      "pause_align": 0.816
+    },
+    "3": {
+      "utmos": 2.669,
+      "grammar": 27.4,
+      "blaser": 2.7279396057128906,
+      "pause_align": 0.744
+    },
+    "4": {
+      "utmos": 3.681,
+      "grammar": 29.5,
+      "blaser": 3.8096628189086914,
+      "pause_align": 0.538
+    },
+    "5": {
+      "utmos": 3.713,
+      "grammar": 24.9,
+      "blaser": 2.3862483501434326,
+      "pause_align": 1.0
+    },
+    "6": {
+      "utmos": 3.462,
+      "grammar": 19.4,
+      "blaser": 3.1116771697998047,
+      "pause_align": 0.923
+    },
+    "7": {
+      "utmos": 3.252,
+      "grammar": 35.4,
+      "blaser": 3.2300045490264893,
+      "pause_align": 0.697
+    },
+    "8": {
+      "utmos": 3.368,
+      "grammar": 25.7,
+      "blaser": 3.393148899078369,
+      "pause_align": 0.726
+    },
+    "9": {
+      "utmos": 3.047,
+      "grammar": 21.8,
+      "blaser": 2.648017406463623,
+      "pause_align": 0.813
+    },
+    "10": {
+      "utmos": 3.319,
+      "grammar": 31.5,
+      "blaser": 2.975393772125244,
+      "pause_align": 0.5
+    },
+    "11": {
+      "utmos": 2.83,
+      "grammar": 34.9,
+      "blaser": 3.4307663440704346,
+      "pause_align": 0.5
+    },
+    "12": {
+      "utmos": 3.175,
+      "grammar": 22.4,
+      "blaser": 3.2197043895721436,
+      "pause_align": 0.807
+    },
+    "13": {
+      "utmos": 2.645,
+      "grammar": 23.9,
+      "blaser": 3.2312471866607666,
+      "pause_align": 0.753
+    },
+    "14": {
+      "utmos": 3.172,
+      "grammar": 19.8,
+      "blaser": 3.4753565788269043,
+      "pause_align": 0.713
+    },
+    "15": {
+      "utmos": 3.489,
+      "grammar": 28.3,
+      "blaser": 3.655064105987549,
+      "pause_align": 0.735
+    },
+    "16": {
+      "utmos": 3.634,
+      "grammar": 40.4,
+      "blaser": 3.777233600616455,
+      "pause_align": 0.771
+    }
+  },
+  "2bcdfe58:020": {
+    "1": {
+      "utmos": 2.713,
+      "grammar": 34.2,
+      "blaser": 3.6494033336639404,
+      "pause_align": 0.91
+    },
+    "2": {
+      "utmos": 3.263,
+      "grammar": 29.3,
+      "blaser": 3.4857494831085205,
+      "pause_align": 0.438
+    },
+    "3": {
+      "utmos": 3.236,
+      "grammar": 18.3,
+      "blaser": 2.7628631591796875,
+      "pause_align": 0.5
+    },
+    "4": {
+      "utmos": 2.892,
+      "grammar": 19.9,
+      "blaser": 3.4413576126098633,
+      "pause_align": 1.0
+    },
+    "5": {
+      "utmos": 3.169,
+      "grammar": 21,
+      "blaser": 2.915537118911743,
+      "pause_align": 0.485
+    },
+    "6": {
+      "utmos": 3.443,
+      "grammar": 23.7,
+      "blaser": 3.8089661598205566,
+      "pause_align": 0.5
+    },
+    "7": {
+      "utmos": 2.359,
+      "grammar": 37.7,
+      "blaser": 3.2865993976593018,
+      "pause_align": 0.733
+    },
+    "8": {
+      "utmos": 4.224,
+      "grammar": 11.9,
+      "blaser": 3.3145222663879395,
+      "pause_align": 1.0
+    },
+    "9": {
+      "utmos": 3.404,
+      "grammar": 23,
+      "blaser": 3.3385002613067627,
+      "pause_align": 0.5
+    },
+    "10": {
+      "utmos": 3.287,
+      "grammar": 25.7,
+      "blaser": 3.118168354034424,
+      "pause_align": 0.821
+    },
+    "11": {
+      "utmos": 3.277,
+      "grammar": 35.2,
+      "blaser": 3.6525917053222656,
+      "pause_align": 0.831
+    },
+    "12": {
+      "utmos": 3.369,
+      "grammar": 20.6,
+      "blaser": 3.503910779953003,
+      "pause_align": 0.566
+    },
+    "13": {
+      "utmos": 3.729,
+      "grammar": 20.8,
+      "blaser": 2.711122989654541,
+      "pause_align": 0.935
+    },
+    "14": {
+      "utmos": 3.567,
+      "grammar": 15.9,
+      "blaser": 3.192204236984253,
+      "pause_align": 0.5
+    },
+    "15": {
+      "utmos": 3.254,
+      "grammar": 28.1,
+      "blaser": 3.3049826622009277,
+      "pause_align": 1.0
+    },
+    "16": {
+      "utmos": 3.96,
+      "grammar": 15.4,
+      "blaser": 3.017094612121582,
+      "pause_align": 0.437
+    },
+    "17": {
+      "utmos": 4.05,
+      "grammar": 44,
+      "blaser": 2.659811496734619,
+      "pause_align": 0.5
+    },
+    "18": {
+      "utmos": 3.218,
+      "grammar": 30.7,
+      "blaser": 3.062601089477539,
+      "pause_align": 0.532
+    },
+    "19": {
+      "utmos": 2.566,
+      "grammar": 32.7,
+      "blaser": 3.377202033996582,
+      "pause_align": 1.0
+    },
+    "20": {
+      "utmos": 3.401,
+      "grammar": 27.6,
+      "blaser": 3.540130138397217,
+      "pause_align": 0.934
+    },
+    "21": {
+      "utmos": 3.279,
+      "grammar": 24.6,
+      "blaser": 3.4655652046203613,
+      "pause_align": 0.5
+    },
+    "22": {
+      "utmos": 3.058,
+      "grammar": 27.5,
+      "blaser": 3.1335654258728027,
+      "pause_align": 0.5
+    },
+    "23": {
+      "utmos": 1.407,
+      "grammar": null,
+      "blaser": 3.6334753036499023,
+      "pause_align": 1.0
+    },
+    "24": {
+      "utmos": 2.628,
+      "grammar": 20.3,
+      "blaser": 3.3256471157073975,
+      "pause_align": 0.865
+    },
+    "25": {
+      "utmos": 2.593,
+      "grammar": 33.2,
+      "blaser": 2.3004562854766846,
+      "pause_align": 0.735
+    },
+    "26": {
+      "utmos": 1.281,
+      "grammar": 12.2,
+      "blaser": 2.660294532775879,
+      "pause_align": 0.5
+    },
+    "27": {
+      "utmos": 3.431,
+      "grammar": 15.2,
+      "blaser": 2.5962905883789062,
+      "pause_align": 0.809
+    }
+  },
+  "2bcdfe58:021": {
+    "1": {
+      "utmos": 3.698,
+      "grammar": 25.3,
+      "blaser": 2.833036422729492,
+      "pause_align": 0.5
+    },
+    "2": {
+      "utmos": 4.025,
+      "grammar": 10.5,
+      "blaser": 3.1644506454467773,
+      "pause_align": 0.979
+    },
+    "3": {
+      "utmos": 3.867,
+      "grammar": 20.1,
+      "blaser": 3.5193099975585938,
+      "pause_align": 0.625
+    },
+    "4": {
+      "utmos": 3.597,
+      "grammar": null,
+      "blaser": 3.735460042953491,
+      "pause_align": 0.5
+    },
+    "5": {
+      "utmos": 3.719,
+      "grammar": 21.8,
+      "blaser": 3.6831507682800293,
+      "pause_align": 0.622
+    },
+    "6": {
+      "utmos": 4.042,
+      "grammar": 14.1,
+      "blaser": 3.0990519523620605,
+      "pause_align": 0.934
+    },
+    "7": {
+      "utmos": 2.838,
+      "grammar": 9,
+      "blaser": 3.8581929206848145,
+      "pause_align": 1.0
+    },
+    "8": {
+      "utmos": 3.309,
+      "grammar": 27.9,
+      "blaser": 3.5023066997528076,
+      "pause_align": 0.581
+    },
+    "9": {
+      "utmos": 3.8,
+      "grammar": 27.9,
+      "blaser": 3.4062705039978027,
+      "pause_align": 0.697
+    },
+    "10": {
+      "utmos": 3.479,
+      "grammar": 52.6,
+      "blaser": 4.078406810760498,
+      "pause_align": 0.598
+    },
+    "11": {
+      "utmos": 3.257,
+      "grammar": 23.5,
+      "blaser": 3.3939478397369385,
+      "pause_align": 0.537
+    },
+    "12": {
+      "utmos": 3.406,
+      "grammar": 32.5,
+      "blaser": 3.6068568229675293,
+      "pause_align": 1.0
+    },
+    "13": {
+      "utmos": 3.926,
+      "grammar": 35.3,
+      "blaser": 3.0835394859313965,
+      "pause_align": 0.818
+    },
+    "14": {
+      "utmos": 3.695,
+      "grammar": 20.6,
+      "blaser": 3.2140145301818848,
+      "pause_align": 0.968
+    }
+  },
+  "2bcdfe58:022": {
+    "1": {
+      "utmos": 3.777,
+      "grammar": 28.7,
+      "blaser": 3.0428595542907715,
+      "pause_align": 0.5
+    },
+    "2": {
+      "utmos": 3.148,
+      "grammar": 26.8,
+      "blaser": 3.5349552631378174,
+      "pause_align": 0.912
+    },
+    "3": {
+      "utmos": 2.886,
+      "grammar": 15.1,
+      "blaser": 3.117851734161377,
+      "pause_align": 0.5
+    },
+    "4": {
+      "utmos": 3.781,
+      "grammar": 11.5,
+      "blaser": 3.8166885375976562,
+      "pause_align": 0.5
+    },
+    "5": {
+      "utmos": 3.412,
+      "grammar": 32.7,
+      "blaser": 3.5509798526763916,
+      "pause_align": 0.411
+    },
+    "6": {
+      "utmos": 3.525,
+      "grammar": 31.3,
+      "blaser": 3.3126609325408936,
+      "pause_align": 0.595
+    },
+    "7": {
+      "utmos": 4.194,
+      "grammar": 31.4,
+      "blaser": 2.6012518405914307,
+      "pause_align": 0.667
+    },
+    "8": {
+      "utmos": 3.349,
+      "grammar": 30.8,
+      "blaser": 3.5278165340423584,
+      "pause_align": 0.34
+    },
+    "9": {
+      "utmos": 3.818,
+      "grammar": 14.4,
+      "blaser": 3.337341785430908,
+      "pause_align": 0.773
+    },
+    "10": {
+      "utmos": 2.81,
+      "grammar": 28.7,
+      "blaser": 3.2536048889160156,
+      "pause_align": 0.478
+    },
+    "11": {
+      "utmos": 3.207,
+      "grammar": 24.9,
+      "blaser": 3.978189468383789,
+      "pause_align": 0.82
+    },
+    "12": {
+      "utmos": 3.284,
+      "grammar": 44.9,
+      "blaser": 3.4183993339538574,
+      "pause_align": 0.619
+    },
+    "13": {
+      "utmos": 3.501,
+      "grammar": 19.9,
+      "blaser": 3.396176338195801,
+      "pause_align": 0.555
+    },
+    "14": {
+      "utmos": 3.039,
+      "grammar": 28.6,
+      "blaser": 3.778482675552368,
+      "pause_align": 0.745
+    },
+    "15": {
+      "utmos": 3.348,
+      "grammar": 23.5,
+      "blaser": 3.056701183319092,
+      "pause_align": 0.97
+    },
+    "16": {
+      "utmos": 3.594,
+      "grammar": null,
+      "blaser": 3.4852943420410156,
+      "pause_align": 1.0
+    },
+    "17": {
+      "utmos": 3.551,
+      "grammar": 15.7,
+      "blaser": 3.0601491928100586,
+      "pause_align": 0.5
+    }
+  },
+  "2bcdfe58:023": {
+    "1": {
+      "utmos": 4.057,
+      "grammar": 15.3,
+      "blaser": 3.2180986404418945,
+      "pause_align": 0.5
+    },
+    "2": {
+      "utmos": 3.375,
+      "grammar": 30.8,
+      "blaser": 3.3631911277770996,
+      "pause_align": 0.407
+    },
+    "3": {
+      "utmos": 3.655,
+      "grammar": 20.7,
+      "blaser": 3.064335823059082,
+      "pause_align": 0.79
+    },
+    "4": {
+      "utmos": 3.32,
+      "grammar": 29.7,
+      "blaser": 3.7094669342041016,
+      "pause_align": 0.5
+    },
+    "5": {
+      "utmos": 3.268,
+      "grammar": 20,
+      "blaser": 2.923438549041748,
+      "pause_align": 0.969
+    },
+    "6": {
+      "utmos": 3.839,
+      "grammar": 30.3,
+      "blaser": 3.6279215812683105,
+      "pause_align": 0.846
+    },
+    "7": {
+      "utmos": 3.655,
+      "grammar": 29.5,
+      "blaser": 3.539536952972412,
+      "pause_align": 0.32
+    },
+    "8": {
+      "utmos": 3.082,
+      "grammar": 21.5,
+      "blaser": 3.4828009605407715,
+      "pause_align": 0.31
+    },
+    "9": {
+      "utmos": 3.208,
+      "grammar": 18.6,
+      "blaser": 3.7235183715820312,
+      "pause_align": 0.5
+    },
+    "10": {
+      "utmos": 3.549,
+      "grammar": 12.2,
+      "blaser": 3.5685272216796875,
+      "pause_align": 1.0
+    },
+    "11": {
+      "utmos": 4.044,
+      "grammar": 17,
+      "blaser": 3.737227439880371,
+      "pause_align": 0.385
+    },
+    "12": {
+      "utmos": 3.75,
+      "grammar": 21.1,
+      "blaser": 2.9101290702819824,
+      "pause_align": 0.864
+    },
+    "13": {
+      "utmos": 3.452,
+      "grammar": 18.4,
+      "blaser": 3.8965396881103516,
+      "pause_align": 1.0
+    },
+    "14": {
+      "utmos": 3.304,
+      "grammar": 22.2,
+      "blaser": 3.422443389892578,
+      "pause_align": 0.5
+    },
+    "15": {
+      "utmos": 2.969,
+      "grammar": 17.6,
+      "blaser": 3.1599020957946777,
+      "pause_align": 0.5
+    },
+    "16": {
+      "utmos": 3.151,
+      "grammar": 27.9,
+      "blaser": 3.2774147987365723,
+      "pause_align": 0.802
+    },
+    "17": {
+      "utmos": 1.237,
+      "grammar": 14.6,
+      "blaser": 2.47971248626709,
+      "pause_align": 0.5
+    }
+  },
+  "2bcdfe58:024": {
+    "1": {
+      "utmos": 2.766,
+      "grammar": 32.3,
+      "blaser": 2.9100100994110107,
+      "pause_align": 0.264
+    },
+    "2": {
+      "utmos": 3.57,
+      "grammar": 21.4,
+      "blaser": 3.501169443130493,
+      "pause_align": 1.0
+    },
+    "3": {
+      "utmos": 3.878,
+      "grammar": 31.5,
+      "blaser": 3.4550414085388184,
+      "pause_align": 0.785
+    },
+    "4": {
+      "utmos": 4.031,
+      "grammar": 20.6,
+      "blaser": 3.1818346977233887,
+      "pause_align": 0.96
+    },
+    "5": {
+      "utmos": 2.879,
+      "grammar": 42.2,
+      "blaser": 2.4124372005462646,
+      "pause_align": 0.762
+    },
+    "6": {
+      "utmos": 4.065,
+      "grammar": 21,
+      "blaser": 2.1437442302703857,
+      "pause_align": 0.5
+    },
+    "7": {
+      "utmos": 4.229,
+      "grammar": 24.8,
+      "blaser": 2.6038899421691895,
+      "pause_align": 0.826
+    },
+    "8": {
+      "utmos": 4.038,
+      "grammar": 25.6,
+      "blaser": 2.423166275024414,
+      "pause_align": 0.926
+    },
+    "9": {
+      "utmos": 4.178,
+      "grammar": 18.6,
+      "blaser": 2.8076231479644775,
+      "pause_align": 0.956
+    },
+    "10": {
+      "utmos": 3.29,
+      "grammar": 13.7,
+      "blaser": 2.521083354949951,
+      "pause_align": 1.0
+    },
+    "11": {
+      "utmos": 3.109,
+      "grammar": 19.1,
+      "blaser": 2.9470558166503906,
+      "pause_align": 0.5
+    },
+    "12": {
+      "utmos": 3.317,
+      "grammar": 16,
+      "blaser": 3.0506558418273926,
+      "pause_align": 0.5
+    },
+    "13": {
+      "utmos": 3.051,
+      "grammar": 15.1,
+      "blaser": 1.9489777088165283,
+      "pause_align": 1.0
+    },
+    "14": {
+      "utmos": 3.493,
+      "grammar": 21.3,
+      "blaser": 2.5488951206207275,
+      "pause_align": 0.5
+    },
+    "15": {
+      "utmos": 3.558,
+      "grammar": 23.2,
+      "blaser": 2.615323543548584,
+      "pause_align": 1.0
+    },
+    "16": {
+      "utmos": 3.818,
+      "grammar": 22.9,
+      "blaser": 2.7915120124816895,
+      "pause_align": 1.0
+    },
+    "17": {
+      "utmos": 2.538,
+      "grammar": 18.5,
+      "pause_align": 0.726
+    }
+  },
+  "2bcdfe58:025": {
+    "1": {
+      "utmos": 2.596,
+      "grammar": 35.8,
+      "blaser": 3.3124938011169434,
+      "pause_align": 0.991
+    },
+    "2": {
+      "utmos": 2.559,
+      "grammar": 18.1,
+      "blaser": 2.528627395629883,
+      "pause_align": 0.5
+    },
+    "3": {
+      "utmos": 3.158,
+      "grammar": 25,
+      "blaser": 2.313048839569092,
+      "pause_align": 0.5
+    },
+    "4": {
+      "utmos": 4.09,
+      "grammar": 32.9,
+      "blaser": 2.440248489379883,
+      "pause_align": 0.555
+    },
+    "5": {
+      "utmos": 3.758,
+      "grammar": 14.6,
+      "blaser": 1.6636322736740112,
+      "pause_align": 1.0
+    },
+    "6": {
+      "utmos": 3.683,
+      "grammar": 30.2,
+      "blaser": 2.4713001251220703,
+      "pause_align": 0.724
+    },
+    "7": {
+      "utmos": 4.09,
+      "grammar": 27.3,
+      "blaser": 2.4802610874176025,
+      "pause_align": 0.872
+    },
+    "8": {
+      "utmos": 2.78,
+      "grammar": 20.8,
+      "blaser": 2.6194632053375244,
+      "pause_align": 1.0
+    },
+    "9": {
+      "utmos": 2.254,
+      "grammar": 17,
+      "blaser": 1.4656240940093994,
+      "pause_align": 0.5
+    },
+    "10": {
+      "utmos": 3.755,
+      "grammar": 31.5,
+      "blaser": 2.5830078125,
+      "pause_align": 0.824
+    },
+    "11": {
+      "utmos": 3.738,
+      "grammar": 26.3,
+      "pause_align": 0.247
+    }
+  },
+  "2bcdfe58:026": {
+    "1": {
+      "utmos": 3.734,
+      "grammar": 29.8,
+      "blaser": 3.2107770442962646,
+      "pause_align": 0.523
+    },
+    "2": {
+      "utmos": 3.961,
+      "grammar": 18.4,
+      "blaser": 2.5566046237945557,
+      "pause_align": 0.5
+    },
+    "3": {
+      "utmos": 3.48,
+      "grammar": 31.1,
+      "blaser": 2.9235262870788574,
+      "pause_align": 0.776
+    },
+    "4": {
+      "utmos": 3.923,
+      "grammar": 28.5,
+      "blaser": 3.5107786655426025,
+      "pause_align": 0.614
+    },
+    "5": {
+      "utmos": 3.665,
+      "grammar": 11.7,
+      "blaser": 3.2666969299316406,
+      "pause_align": 1.0
+    },
+    "6": {
+      "utmos": 4.062,
+      "grammar": 17.5,
+      "blaser": 3.5834908485412598,
+      "pause_align": 1.0
+    },
+    "7": {
+      "utmos": 3.504,
+      "grammar": 42.5,
+      "blaser": 2.897040843963623,
+      "pause_align": 0.882
+    },
+    "8": {
+      "utmos": 3.845,
+      "grammar": 34.2,
+      "blaser": 3.5303633213043213,
+      "pause_align": 0.807
+    },
+    "9": {
+      "utmos": 3.092,
+      "grammar": 20.4,
+      "blaser": 3.673875570297241,
+      "pause_align": 0.911
+    },
+    "10": {
+      "utmos": 1.256,
+      "grammar": 23.6,
+      "blaser": 3.557431697845459,
+      "pause_align": 0.5
+    },
+    "11": {
+      "utmos": 3.539,
+      "grammar": 16.8,
+      "blaser": 2.986262321472168,
+      "pause_align": 0.5
+    },
+    "12": {
+      "utmos": 1.248,
+      "grammar": 18.9,
+      "blaser": 3.284367322921753,
+      "pause_align": 0.5
+    },
+    "13": {
+      "utmos": 3.33,
+      "grammar": 20,
+      "blaser": 2.262164354324341,
+      "pause_align": 0.727
+    },
+    "14": {
+      "utmos": 3.971,
+      "grammar": 27.6,
+      "blaser": 3.574131488800049,
+      "pause_align": 0.694
+    },
+    "15": {
+      "utmos": 4.369,
+      "grammar": 24,
+      "blaser": 2.586733102798462,
+      "pause_align": 0.824
+    },
+    "16": {
+      "utmos": 3.025,
+      "grammar": 27.3,
+      "blaser": 3.6726529598236084,
+      "pause_align": 0.715
+    },
+    "17": {
+      "utmos": 3.457,
+      "grammar": 23,
+      "blaser": 3.008823871612549,
+      "pause_align": 1.0
+    }
+  },
+  "2bcdfe58:027": {
+    "1": {
+      "utmos": 4.359,
+      "grammar": 23,
+      "blaser": 3.0744259357452393,
+      "pause_align": 0.5
+    },
+    "2": {
+      "utmos": 3.563,
+      "grammar": 12.4,
+      "blaser": 3.6695923805236816,
+      "pause_align": 1.0
+    },
+    "3": {
+      "utmos": 3.869,
+      "grammar": 27.7,
+      "blaser": 3.212674379348755,
+      "pause_align": 0.647
+    },
+    "4": {
+      "utmos": 3.482,
+      "grammar": 16.3,
+      "blaser": 3.2680771350860596,
+      "pause_align": 0.153
+    },
+    "5": {
+      "utmos": 3.728,
+      "grammar": 35.3,
+      "blaser": 3.2094898223876953,
+      "pause_align": 0.557
+    },
+    "6": {
+      "utmos": 4.048,
+      "grammar": 31.9,
+      "blaser": 3.6804003715515137,
+      "pause_align": 0.058
+    },
+    "7": {
+      "utmos": 3.748,
+      "grammar": 17.8,
+      "blaser": 3.5085654258728027,
+      "pause_align": 1.0
+    },
+    "8": {
+      "utmos": 3.397,
+      "grammar": 27.3,
+      "blaser": 3.336535692214966,
+      "pause_align": 0.672
+    },
+    "9": {
+      "utmos": 4.143,
+      "grammar": 19,
+      "blaser": 3.727475166320801,
+      "pause_align": 0.916
+    },
+    "10": {
+      "utmos": 3.795,
+      "grammar": 23.8,
+      "blaser": 3.8589792251586914,
+      "pause_align": 0.821
+    },
+    "11": {
+      "utmos": 3.776,
+      "grammar": 37.4,
+      "blaser": 3.213688373565674,
+      "pause_align": 0.193
+    },
+    "12": {
+      "utmos": 4.174,
+      "grammar": 24.4,
+      "blaser": 3.3518338203430176,
+      "pause_align": 0.261
+    },
+    "13": {
+      "utmos": 1.939,
+      "grammar": null,
+      "blaser": 3.5160837173461914,
+      "pause_align": 0.5
+    },
+    "14": {
+      "utmos": 3.792,
+      "grammar": 31.4,
+      "blaser": 4.105114936828613,
+      "pause_align": 0.346
+    },
+    "15": {
+      "utmos": 3.84,
+      "grammar": 32.1,
+      "blaser": 3.5359597206115723,
+      "pause_align": 0.594
+    },
+    "16": {
+      "utmos": 3.798,
+      "grammar": 30.8,
+      "blaser": 3.5246450901031494,
+      "pause_align": 0.279
+    },
+    "17": {
+      "utmos": 3.494,
+      "grammar": 23.6,
+      "blaser": 3.450232744216919,
+      "pause_align": 1.0
+    },
+    "18": {
+      "utmos": 3.721,
+      "grammar": 16.4,
+      "blaser": 3.194263458251953,
+      "pause_align": 1.0
+    },
+    "19": {
+      "utmos": 3.647,
+      "grammar": 67.4,
+      "blaser": 4.09667444229126,
+      "pause_align": 0.5
+    },
+    "20": {
+      "utmos": 3.315,
+      "grammar": 27,
+      "blaser": 3.3947501182556152,
+      "pause_align": 0.433
+    },
+    "21": {
+      "utmos": 4.01,
+      "grammar": null,
+      "blaser": 3.4061765670776367,
+      "pause_align": 0.5
+    },
+    "22": {
+      "utmos": 3.755,
+      "grammar": 16.5,
+      "blaser": 3.4814085960388184,
+      "pause_align": 1.0
+    }
+  },
+  "2bcdfe58:028": {
+    "1": {
+      "utmos": 4.131,
+      "grammar": 13.6,
+      "blaser": 3.3370699882507324,
+      "pause_align": 1.0
+    },
+    "2": {
+      "utmos": 2.567,
+      "grammar": 30.2,
+      "blaser": 3.420701026916504,
+      "pause_align": 0.953
+    },
+    "3": {
+      "utmos": 3.144,
+      "grammar": null,
+      "blaser": 3.5803475379943848,
+      "pause_align": 0.5
+    },
+    "4": {
+      "utmos": 3.962,
+      "grammar": 14.7,
+      "blaser": 3.0117478370666504,
+      "pause_align": 1.0
+    },
+    "5": {
+      "utmos": 3.011,
+      "grammar": 24.9,
+      "blaser": 3.2777962684631348,
+      "pause_align": 0.921
+    },
+    "6": {
+      "utmos": 3.929,
+      "grammar": 21.3,
+      "blaser": 2.940732479095459,
+      "pause_align": 0.877
+    },
+    "7": {
+      "utmos": 3.713,
+      "grammar": 34.6,
+      "blaser": 3.3483352661132812,
+      "pause_align": 0.724
+    },
+    "8": {
+      "utmos": 4.345,
+      "grammar": 16.9,
+      "blaser": 3.376779079437256,
+      "pause_align": 0.906
+    },
+    "9": {
+      "utmos": 2.71,
+      "grammar": 15.6,
+      "blaser": 2.982025146484375,
+      "pause_align": 0.542
+    },
+    "10": {
+      "utmos": 3.992,
+      "grammar": 43,
+      "blaser": 2.9321188926696777,
+      "pause_align": 0.939
+    },
+    "11": {
+      "utmos": 4.071,
+      "grammar": 32.3,
+      "blaser": 3.248539447784424,
+      "pause_align": 0.826
+    },
+    "12": {
+      "utmos": 3.457,
+      "grammar": 29.3,
+      "blaser": 3.1318705081939697,
+      "pause_align": 0.245
+    },
+    "13": {
+      "utmos": 4.125,
+      "grammar": 20.3,
+      "blaser": 2.848151445388794,
+      "pause_align": 0.5
+    },
+    "14": {
+      "utmos": 3.773,
+      "grammar": 11.5,
+      "blaser": 2.6658735275268555,
+      "pause_align": 1.0
+    },
+    "15": {
+      "utmos": 2.638,
+      "grammar": 13.9,
+      "blaser": 2.8078534603118896,
+      "pause_align": 1.0
+    }
+  },
+  "2bcdfe58:029": {
+    "1": {
+      "utmos": 3.091,
+      "grammar": 12.7,
+      "blaser": 3.554965019226074,
+      "pause_align": 0.5
+    },
+    "2": {
+      "utmos": 3.151,
+      "grammar": 28.1,
+      "blaser": 3.9514009952545166,
+      "pause_align": 0.99
+    },
+    "3": {
+      "utmos": 3.566,
+      "grammar": 15.1,
+      "blaser": 2.971994400024414,
+      "pause_align": 0.825
+    },
+    "4": {
+      "utmos": 3.893,
+      "grammar": 12.2,
+      "blaser": 3.2852373123168945,
+      "pause_align": 1.0
+    },
+    "5": {
+      "utmos": 3.36,
+      "grammar": 24.1,
+      "blaser": 2.987989902496338,
+      "pause_align": 0.793
+    },
+    "6": {
+      "utmos": 3.966,
+      "grammar": 18.3,
+      "blaser": 3.4900331497192383,
+      "pause_align": 0.999
+    },
+    "7": {
+      "utmos": 3.901,
+      "grammar": 27,
+      "blaser": 3.14752197265625,
+      "pause_align": 0.5
+    },
+    "8": {
+      "utmos": 2.978,
+      "grammar": 34.5,
+      "blaser": 4.114562034606934,
+      "pause_align": 0.533
+    },
+    "9": {
+      "utmos": 4.034,
+      "grammar": 30.3,
+      "blaser": 3.1973001956939697,
+      "pause_align": 0.923
+    },
+    "10": {
+      "utmos": 4.088,
+      "grammar": 28.5,
+      "blaser": 3.269413471221924,
+      "pause_align": 0.477
+    },
+    "11": {
+      "utmos": 3.548,
+      "grammar": 21.8,
+      "blaser": 3.533125400543213,
+      "pause_align": 0.932
+    },
+    "12": {
+      "utmos": 3.06,
+      "grammar": 28.6,
+      "blaser": 3.4825797080993652,
+      "pause_align": 0.652
+    },
+    "13": {
+      "utmos": 3.769,
+      "grammar": 20.1,
+      "blaser": 3.0263819694519043,
+      "pause_align": 0.839
+    },
+    "14": {
+      "utmos": 4.012,
+      "grammar": 17,
+      "blaser": 3.185434341430664,
+      "pause_align": 0.393
+    },
+    "15": {
+      "utmos": 3.784,
+      "grammar": 22.9,
+      "blaser": 3.327587127685547,
+      "pause_align": 0.796
+    },
+    "16": {
+      "utmos": 3.506,
+      "grammar": 30.3,
+      "blaser": 3.129237174987793,
+      "pause_align": 0.806
+    },
+    "17": {
+      "utmos": 3.413,
+      "grammar": 20,
+      "blaser": 3.6060869693756104,
+      "pause_align": 0.857
+    },
+    "18": {
+      "utmos": 3.977,
+      "grammar": 20.6,
+      "blaser": 2.90759539604187,
+      "pause_align": 0.5
+    },
+    "19": {
+      "utmos": 3.261,
+      "grammar": 36.8,
+      "blaser": 3.717456102371216,
+      "pause_align": 0.727
+    },
+    "20": {
+      "utmos": 3.78,
+      "grammar": 46.4,
+      "blaser": 3.7116475105285645,
+      "pause_align": 0.5
+    },
+    "21": {
+      "utmos": 2.79,
+      "grammar": 20.6,
+      "blaser": 3.435420036315918,
+      "pause_align": 0.759
+    },
+    "22": {
+      "utmos": 3.094,
+      "grammar": 15.9,
+      "blaser": 3.5975191593170166,
+      "pause_align": 0.5
+    },
+    "23": {
+      "utmos": 2.972,
+      "grammar": 32,
+      "blaser": 3.682373523712158,
+      "pause_align": 0.959
+    },
+    "24": {
+      "utmos": 3.094,
+      "grammar": 24.2,
+      "blaser": 3.7581324577331543,
+      "pause_align": 0.836
+    },
+    "25": {
+      "utmos": 3.162,
+      "grammar": 19.1,
+      "blaser": 3.7855095863342285,
+      "pause_align": 0.5
+    }
+  },
+  "2bcdfe58:030": {
+    "1": {
+      "utmos": 3.183,
+      "grammar": 30.8,
+      "blaser": 3.537179470062256,
+      "pause_align": 0.935
+    },
+    "2": {
+      "utmos": 3.65,
+      "grammar": 18.2,
+      "blaser": 3.4416091442108154,
+      "pause_align": 1.0
+    },
+    "3": {
+      "utmos": 3.823,
+      "grammar": 35.7,
+      "blaser": 3.622544050216675,
+      "pause_align": 0.798
+    },
+    "4": {
+      "utmos": 3.415,
+      "grammar": 17.6,
+      "blaser": 3.728191375732422,
+      "pause_align": 0.5
+    },
+    "5": {
+      "utmos": 3.652,
+      "grammar": 27.2,
+      "blaser": 3.2181344032287598,
+      "pause_align": 0.778
+    },
+    "6": {
+      "utmos": 3.284,
+      "grammar": 30.8,
+      "blaser": 3.914687156677246,
+      "pause_align": 0.829
+    },
+    "7": {
+      "utmos": 2.356,
+      "grammar": 37.5,
+      "blaser": 3.1944525241851807,
+      "pause_align": 0.481
+    },
+    "8": {
+      "utmos": 3.3,
+      "grammar": 40.7,
+      "blaser": 3.9574055671691895,
+      "pause_align": 0.787
+    },
+    "9": {
+      "utmos": 3.207,
+      "grammar": 34.2,
+      "blaser": 4.360324859619141,
+      "pause_align": 0.43
+    },
+    "10": {
+      "utmos": 1.614,
+      "grammar": 9,
+      "blaser": 3.4077653884887695,
+      "pause_align": 0.993
+    },
+    "11": {
+      "utmos": 4.021,
+      "grammar": 37.3,
+      "blaser": 3.586123466491699,
+      "pause_align": 0.521
+    },
+    "12": {
+      "utmos": 3.618,
+      "grammar": 28.8,
+      "blaser": 2.1968836784362793,
+      "pause_align": 0.534
+    },
+    "13": {
+      "utmos": 2.61,
+      "grammar": 31.5,
+      "blaser": 3.206498622894287,
+      "pause_align": 0.858
+    }
+  },
+  "2bcdfe58:031": {
+    "1": {
+      "utmos": 3.52,
+      "grammar": 20.2,
+      "blaser": 3.529430866241455,
+      "pause_align": 0.448
+    },
+    "2": {
+      "utmos": 4.097,
+      "grammar": 31.2,
+      "blaser": 2.8921432495117188,
+      "pause_align": 0.833
+    },
+    "3": {
+      "utmos": 4.22,
+      "grammar": 12.1,
+      "blaser": 2.9822049140930176,
+      "pause_align": 0.855
+    },
+    "4": {
+      "utmos": 3.734,
+      "grammar": 30.8,
+      "blaser": 3.1239070892333984,
+      "pause_align": 0.5
+    },
+    "5": {
+      "utmos": 3.831,
+      "grammar": 37.8,
+      "blaser": 3.8468880653381348,
+      "pause_align": 0.746
+    },
+    "6": {
+      "utmos": 3.714,
+      "grammar": 29.3,
+      "blaser": 3.450491428375244,
+      "pause_align": 0.891
+    },
+    "7": {
+      "utmos": 3.865,
+      "grammar": 28.1,
+      "blaser": 3.207026481628418,
+      "pause_align": 0.486
+    },
+    "8": {
+      "utmos": 3.494,
+      "grammar": 8.4,
+      "blaser": 3.0302748680114746,
+      "pause_align": 1.0
+    },
+    "9": {
+      "utmos": 3.854,
+      "grammar": 21.9,
+      "blaser": 3.4521520137786865,
+      "pause_align": 0.968
+    },
+    "10": {
+      "utmos": 3.043,
+      "grammar": 35.9,
+      "blaser": 3.433532476425171,
+      "pause_align": 0.852
+    },
+    "11": {
+      "utmos": 3.35,
+      "grammar": 26.7,
+      "blaser": 3.408836841583252,
+      "pause_align": 0.817
+    },
+    "12": {
+      "utmos": 3.244,
+      "grammar": 30.5,
+      "blaser": 3.097219228744507,
+      "pause_align": 0.824
+    },
+    "13": {
+      "utmos": 3.735,
+      "grammar": 33.9,
+      "blaser": 3.5727200508117676,
+      "pause_align": 0.763
+    }
+  },
+  "2bcdfe58:032": {
+    "1": {
+      "utmos": 3.546,
+      "grammar": 29.8,
+      "blaser": 3.8799362182617188,
+      "pause_align": 0.983
+    },
+    "2": {
+      "utmos": 3.694,
+      "grammar": 56.4,
+      "blaser": 3.350048303604126,
+      "pause_align": 0.812
+    },
+    "3": {
+      "utmos": 3.313,
+      "grammar": 24.1,
+      "blaser": 3.1755928993225098,
+      "pause_align": 0.885
+    },
+    "4": {
+      "utmos": 2.862,
+      "grammar": 19.8,
+      "blaser": 2.866421699523926,
+      "pause_align": 0.801
+    },
+    "5": {
+      "utmos": 3.311,
+      "grammar": 37.5,
+      "blaser": 3.886442184448242,
+      "pause_align": 0.626
+    },
+    "6": {
+      "utmos": 3.548,
+      "grammar": 20.7,
+      "blaser": 3.1760191917419434,
+      "pause_align": 0.824
+    },
+    "7": {
+      "utmos": 1.746,
+      "grammar": null,
+      "blaser": 3.4852943420410156,
+      "pause_align": 1.0
+    },
+    "8": {
+      "utmos": 4.208,
+      "grammar": 27.9,
+      "blaser": 3.3970823287963867,
+      "pause_align": 0.5
+    },
+    "9": {
+      "utmos": 2.938,
+      "grammar": 21.4,
+      "blaser": 2.740905523300171,
+      "pause_align": 0.5
+    },
+    "10": {
+      "utmos": 4.033,
+      "grammar": 20.8,
+      "blaser": 3.140479326248169,
+      "pause_align": 0.5
+    },
+    "11": {
+      "utmos": 3.016,
+      "grammar": 21.6,
+      "blaser": 3.133913993835449,
+      "pause_align": 0.5
+    },
+    "12": {
+      "utmos": 1.746,
+      "grammar": null,
+      "blaser": 3.4852943420410156,
+      "pause_align": 1.0
+    },
+    "13": {
+      "utmos": 2.875,
+      "grammar": 38.1,
+      "blaser": 3.622897148132324,
+      "pause_align": 0.573
+    },
+    "14": {
+      "utmos": 2.864,
+      "grammar": 23.2,
+      "blaser": 3.323507070541382,
+      "pause_align": 0.878
+    },
+    "15": {
+      "utmos": 2.827,
+      "grammar": 15.4,
+      "blaser": 3.3328394889831543,
+      "pause_align": 0.5
+    },
+    "16": {
+      "utmos": 3.57,
+      "grammar": 28.8,
+      "blaser": 3.329746961593628,
+      "pause_align": 0.798
+    },
+    "17": {
+      "utmos": 2.708,
+      "grammar": 21.3,
+      "blaser": 3.2139244079589844,
+      "pause_align": 0.605
+    },
+    "18": {
+      "utmos": 2.895,
+      "grammar": 44.1,
+      "blaser": 3.484344005584717,
+      "pause_align": 0.226
+    },
+    "19": {
+      "utmos": 3.964,
+      "grammar": 26.8,
+      "blaser": 2.752868890762329,
+      "pause_align": 0.127
+    },
+    "20": {
+      "utmos": 3.207,
+      "grammar": 29.9,
+      "blaser": 3.7133777141571045,
+      "pause_align": 0.889
+    },
+    "21": {
+      "utmos": 3.783,
+      "grammar": 28.1,
+      "blaser": 3.4290380477905273,
+      "pause_align": 0.644
+    },
+    "22": {
+      "utmos": 3.349,
+      "grammar": 24.2,
+      "blaser": 3.937807321548462,
+      "pause_align": 1.0
+    },
+    "23": {
+      "utmos": 2.921,
+      "grammar": 23.6,
+      "blaser": 4.049007415771484,
+      "pause_align": 0.947
+    },
+    "24": {
+      "utmos": 2.927,
+      "grammar": 20.8,
+      "blaser": 3.1828653812408447,
+      "pause_align": 1.0
+    },
+    "25": {
+      "utmos": 2.539,
+      "grammar": 13.4,
+      "blaser": 2.6607136726379395,
+      "pause_align": 0.5
+    },
+    "26": {
+      "utmos": 2.832,
+      "grammar": 26,
+      "blaser": 2.843513011932373,
+      "pause_align": 0.5
+    },
+    "27": {
+      "utmos": 2.943,
+      "grammar": 32.5,
+      "blaser": 3.521530866622925,
+      "pause_align": 0.728
+    },
+    "28": {
+      "utmos": 3.831,
+      "grammar": 16.1,
+      "blaser": 3.133828639984131,
+      "pause_align": 1.0
+    },
+    "29": {
+      "utmos": 4.001,
+      "grammar": 18.1,
+      "blaser": 3.421318769454956,
+      "pause_align": 1.0
+    },
+    "30": {
+      "utmos": 2.81,
+      "grammar": 32,
+      "blaser": 2.8638851642608643,
+      "pause_align": 0.918
+    }
+  },
+  "2bcdfe58:033": {
+    "1": {
+      "utmos": 3.245,
+      "grammar": 31.9,
+      "blaser": 3.2625539302825928,
+      "pause_align": 0.801
+    },
+    "2": {
+      "utmos": 2.092,
+      "grammar": 13.7,
+      "blaser": 3.327812671661377,
+      "pause_align": 1.0
+    },
+    "3": {
+      "utmos": 3.156,
+      "grammar": 36.3,
+      "blaser": 3.227078676223755,
+      "pause_align": 0.5
+    },
+    "4": {
+      "utmos": 3.374,
+      "grammar": 14.8,
+      "blaser": 2.662367343902588,
+      "pause_align": 0.5
+    },
+    "5": {
+      "utmos": 3.061,
+      "grammar": 22.1,
+      "blaser": 2.864032745361328,
+      "pause_align": 0.932
+    },
+    "6": {
+      "utmos": 3.291,
+      "grammar": 29.1,
+      "blaser": 3.3422904014587402,
+      "pause_align": 0.95
+    },
+    "7": {
+      "utmos": 2.916,
+      "grammar": 11.3,
+      "blaser": 2.5087108612060547,
+      "pause_align": 0.5
+    },
+    "8": {
+      "utmos": 2.686,
+      "grammar": 10.1,
+      "blaser": 3.530796766281128,
+      "pause_align": 1.0
+    },
+    "9": {
+      "utmos": 2.184,
+      "grammar": null,
+      "blaser": 3.29679012298584,
+      "pause_align": 1.0
+    },
+    "10": {
+      "utmos": 2.827,
+      "grammar": 11.4,
+      "blaser": 2.780524730682373,
+      "pause_align": 0.5
+    },
+    "11": {
+      "utmos": 2.825,
+      "grammar": 25.3,
+      "blaser": 3.1975297927856445,
+      "pause_align": 0.446
+    },
+    "12": {
+      "utmos": 3.959,
+      "grammar": 27.4,
+      "blaser": 3.381666898727417,
+      "pause_align": 0.86
+    },
+    "13": {
+      "utmos": 2.635,
+      "grammar": 9.9,
+      "blaser": 3.2007200717926025,
+      "pause_align": 1.0
+    },
+    "14": {
+      "utmos": 3.612,
+      "grammar": null,
+      "blaser": 3.3701374530792236,
+      "pause_align": 0.5
+    },
+    "15": {
+      "utmos": 3.853,
+      "grammar": 35.3,
+      "blaser": 3.245119094848633,
+      "pause_align": 0.564
+    },
+    "16": {
+      "utmos": 3.446,
+      "grammar": null,
+      "blaser": 2.866156578063965,
+      "pause_align": 0.982
+    },
+    "17": {
+      "utmos": 4.132,
+      "grammar": 14.6,
+      "blaser": 2.8877034187316895,
+      "pause_align": 0.5
+    },
+    "18": {
+      "utmos": 3.188,
+      "grammar": 25.8,
+      "blaser": 2.9264707565307617,
+      "pause_align": 0.854
+    }
+  }
+}

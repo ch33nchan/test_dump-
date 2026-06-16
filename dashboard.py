@@ -139,13 +139,10 @@ def episode_full_score(show_id, episode):
     dialogs = fit_raw.get("dialogs", [])
     N = len(dialogs)
     if not N: return None
-    if not fit: return None
-    dialogs = fit.get("dialogs", [])
-    N = len(dialogs)
-    if not N: return None
 
-    # load speech cache for this episode
-    try:    all_cache = json.load(open(SPEECH_CACHE))
+    # load speech cache
+    speech_cache_path = os.path.join(os.path.dirname(__file__), "speech_cache.json")
+    try:    all_cache = json.load(open(speech_cache_path))
     except: all_cache = {}
     ep_cache = all_cache.get(f"{show_id}:{episode}", {})
 
@@ -185,8 +182,8 @@ def episode_full_score(show_id, episode):
     total_w = sum(w for _, w in avail.values())
     eqi = round(sum(v * w for v, w in avail.values()) / total_w, 1) if avail else None
 
-    editor_ep  = safe(f"shows/dubbing/{show_id}/editor/episodes/{episode}/transcript.json")
-    n_reviewed = len((editor_ep or {}).get("dialogs", {}))
+    editor_ep  = ep_data.get("editor") or {}
+    n_reviewed = len(editor_ep.get("dialogs", {}) if isinstance(editor_ep, dict) else {})
     n_cached   = sum(1 for v in ep_cache.values() if v.get("utmos") and v.get("blaser"))
 
     return {

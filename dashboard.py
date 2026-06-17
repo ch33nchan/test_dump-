@@ -608,27 +608,52 @@ with st.sidebar:
     st.caption("Quality evaluation for auto-dubbed video. "
                "Select a show and episode to view scores.")
 
-    show_id = st.text_input(
-        "Show ID",
-        "2bcdfe58",
-        help="Internal pipeline show identifier. Each show has a unique hex ID."
-    )
-    show_name = SHOW_NAMES.get(show_id, "")
-    if show_name:
-        st.caption(f"**{show_name}**")
+    # Build show options from pipeline cache + SHOW_NAMES
+    _pc        = load_pipeline_cache()
+    _show_ids  = sorted(_pc.keys()) if _pc else list(SHOW_NAMES.keys())
 
-    if show_id:
-        with st.spinner(""):
-            try:    eps = list_episodes(show_id)
-            except: eps = []
-        episode = st.selectbox(
-            "Episode",
-            eps or ["001"],
-            help="Each episode is evaluated independently. "
-                 "Scores are pre-computed — switch freely."
-        )
-    else:
-        episode = "001"
+    # Detect language pair for each show from cached pipeline text
+    def _show_lang_pair(sid):
+        ep_data   = (_pc.get(sid) or {})
+        first_ep  = next(iter(ep_data.values()), {}) if ep_data else {}
+        src_texts = [d.get("text","") for d in (first_ep.get("source") or {}).get("dialogs",[])[:6]]
+        tgt_texts = [d.get("text","") for d in (first_ep.get("target") or {}).get("dialogs",[])[:6]]
+        src_lang, _ = detect_lang(src_texts) if src_texts else ("?", "?")
+        tgt_lang, _ = detect_lang(tgt_texts) if tgt_texts else ("?", "?")
+        return f"{src_lang} → {tgt_lang}"
+
+    _show_options = {}
+    for sid in _show_ids:
+        label = SHOW_NAMES.get(sid)
+        if not label:
+            pair  = _show_lang_pair(sid)
+            label = f"{sid[:8]}  ({pair})"
+        _show_options[label] = sid
+
+    selected_label = st.selectbox(
+        "Show",
+        list(_show_options.keys()),
+        help="Select a show to evaluate. Language pair is auto-detected."
+    )
+    show_id   = _show_options[selected_label]
+    lang_pair = _show_lang_pair(show_id)
+    st.caption(f"ID: `{show_id}`")
+    st.markdown(
+        f'<div style="background:#111;border-radius:6px;padding:6px 10px;'
+        f'font-size:13px;color:#4caf50;font-weight:600;margin-bottom:4px">'
+        f'{lang_pair}</div>',
+        unsafe_allow_html=True
+    )
+
+    with st.spinner(""):
+        try:    eps = list_episodes(show_id)
+        except: eps = []
+    episode = st.selectbox(
+        "Episode",
+        eps or ["001"],
+        help="Each episode is evaluated independently. "
+             "Scores are pre-computed — switch freely."
+    )
 
     st.divider()
     st.caption("**How to read this dashboard**")

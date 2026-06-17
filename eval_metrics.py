@@ -11,6 +11,7 @@ Metric stack:
   Voice     — pipeline assignment quality scores (cosine + fit scores from
                intelligent_ranking) + cross-episode consistency
 """
+from __future__ import annotations
 import os, re, unicodedata, tempfile, subprocess, json
 import numpy as np
 

@@ -27,6 +27,9 @@ PIPELINE_CACHE = os.path.join(os.path.dirname(__file__), "pipeline_cache.json")
 
 SHOW_NAMES = {
     "2bcdfe58": "Bhoori Bhojanam (Telugu) — Production",
+    "177f8954": "Show 177f8954 (Chinese\u2192Telugu) \u2014 Production",
+    "2818da7d": "Show 2818da7d (Hindi\u2192Bengali) \u2014 Production",
+    "7531eeeb": "Show 7531eeeb (Chinese\u2192Bengali) \u2014 Production",
 }
 
 # Load pre-baked pipeline data (no Azure needed for display)

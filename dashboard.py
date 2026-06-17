@@ -106,10 +106,10 @@ def get_container():
            .get_container_client(CONTAINER)
 
 def list_episodes(show_id):
-    # use local pipeline cache first
+    # use local pipeline cache first — episodes are nested under show_id
     pc = load_pipeline_cache()
-    if pc:
-        return sorted(pc.keys())
+    if pc and show_id in pc:
+        return sorted(pc[show_id].keys())
     if not AZURE_AVAILABLE:
         return []
     seen = set()
@@ -140,7 +140,7 @@ def load_voice_qc(voice_id):
 def episode_full_score(show_id, episode):
     """Full EQI from pipeline_cache.json + speech_cache.json. No Azure needed."""
     pc = load_pipeline_cache()
-    ep_data = pc.get(episode, {})
+    ep_data = pc.get(show_id, {}).get(episode, {})
     fit_raw  = ep_data.get("fit")
     attempts = ep_data.get("attempts") or {}
     if not fit_raw: return None
@@ -221,7 +221,7 @@ def load_show_overview(show_id, episodes):
 def load_pipeline(show_id, episode):
     # read from local pipeline_cache.json first — no Azure needed
     pc       = load_pipeline_cache()
-    ep_data  = pc.get(episode, {})
+    ep_data  = pc.get(show_id, {}).get(episode, {})
     wav_paths = {}
 
     if AZURE_AVAILABLE:

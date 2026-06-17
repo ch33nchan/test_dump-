@@ -27,9 +27,9 @@ PIPELINE_CACHE = os.path.join(os.path.dirname(__file__), "pipeline_cache.json")
 
 SHOW_NAMES = {
     "2bcdfe58": "Bhoori Bhojanam",
-    "177f8954": "Show 177f8954 (Chinese\u2192Telugu) \u2014 Production",
-    "2818da7d": "Show 2818da7d (Hindi\u2192Bengali) \u2014 Production",
-    "7531eeeb": "Show 7531eeeb (Chinese\u2192Bengali) \u2014 Production",
+    "177f8954": "Chinese → Telugu (177f8954)",
+    "2818da7d": "Hindi → Bengali (2818da7d)",
+    "7531eeeb": "Chinese → Bengali (7531eeeb)",
 }
 
 # Load pre-baked pipeline data (no Azure needed for display)
@@ -739,8 +739,8 @@ st.markdown(
     f'<span style="color:#555;font-size:12px;margin-left:20px">'
     f'{src_lang} → {lang_name}  ·  '
     f'expected expansion {lo_exp:.1f}–{hi_exp:.1f}x  ·  '
-    f'{scores["timing_pass"]}/{scores.get('N', 0)} fit timing  ·  '
-    f'{scores["n_overflow"]} overflow  ·  '
+    f'{scores.get('timing_pass', 0)}/{scores.get('N', 0)} fit timing  ·  '
+    f'{scores.get('n_overflow', 0)} overflow  ·  '
     f'editor reviewed {scores.get('n_reviewed', 0)}/{scores.get('N', 0)}'
     f'</span></div>',
     unsafe_allow_html=True
@@ -1116,9 +1116,9 @@ with tab_issues:
         st.plotly_chart(fig, use_container_width=True)
 
     with col_donut:
-        t_pass = scores["timing_pass"]
+        t_pass = scores.get('timing_pass', 0)
         t_warn = sum(1 for d in dialogs if d["speed_factor"]>1.4 and d["overflow_ms"]<=0)
-        t_fail = scores["n_overflow"]
+        t_fail = scores.get('n_overflow', 0)
         fig2 = go.Figure(go.Pie(
             labels=["Fits timing","Sped up >1.4x","Overflows"],
             values=[t_pass, t_warn, t_fail], hole=0.55,

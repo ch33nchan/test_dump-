@@ -558,6 +558,98 @@ HONORIFIC_MARKERS = {
     },
 }
 
+
+# ── Exclamation drop rate ─────────────────────────────────────────────────────
+# Short exclamatory fillers (啊/哎/अरे/ah) are silently dropped by the episode
+# refinement stage. This metric measures what fraction of them were lost.
+
+_EXCL_TOKENS_EVAL = {
+    # Chinese
+    "啊","哦","哎","嗯","哇","唉","哼","呢","嘛","咦","呀","哟","嘿","哈",
+    "噢","诶","欸","喔","哎呀","哦哦","哎哟","唔","嗨","哇哦",
+    # Hindi / Urdu
+    "अरे","ओह","हाँ","हाय","वाह","ओये","उफ़","उफ","एह","अच्छा","हूँ","हूं",
+    # English code-mix
+    "ah","oh","eh","uh","um","hmm","hm","hey","wow","ooh","ugh","aww","aw","huh",
+}
+
+_EXCL_RE_EVAL = re.compile(
+    r"^\W*(" + "|".join(re.escape(t) for t in sorted(_EXCL_TOKENS_EVAL, key=len, reverse=True)) + r")\W*$",
+    re.IGNORECASE | re.UNICODE,
+)
+
+_EXCL_MAX_DUR_S   = 0.6   # clips shorter than this are always exclamatory
+_EXCL_MAX_CHARS   = 6     # text shorter than this + token match → exclamatory
+
+
+def is_exclamation(text: str | None, duration_s: float | None) -> bool:
+    """Return True for very short exclamatory filler segments."""
+    if duration_s is not None and duration_s <= _EXCL_MAX_DUR_S:
+        return True
+    if not text:
+        return False
+    stripped = text.strip()
+    return len(stripped) <= _EXCL_MAX_CHARS and bool(_EXCL_RE_EVAL.match(stripped))
+
+
+def exclamation_drop_rate(source_dialogs: list[dict], target_dialogs: list[dict]) -> dict:
+    """
+    Compare source dialogs (from cleaned.json or show_refined) against the
+    final translated dialogs to find exclamatory fillers that were silently
+    dropped by the pipeline.
+
+    source_dialogs: list of dicts with keys index, start_time, end_time, text
+    target_dialogs: list of dicts with keys index, start_time, end_time, text
+
+    Returns:
+      total_exclamations  — count of exclamatory segments in source
+      dropped_count       — how many weren't carried through to target
+      drop_rate           — dropped / total (0–1), None if no exclamations found
+      dropped_examples    — list of up to 10 dropped exclamation texts
+    """
+    if not source_dialogs:
+        return {"total_exclamations": 0, "dropped_count": 0,
+                "drop_rate": None, "dropped_examples": []}
+
+    excl_src = []
+    for d in source_dialogs:
+        ss, se = d.get("start_time"), d.get("end_time")
+        dur = (se - ss) if (ss is not None and se is not None) else None
+        if is_exclamation(d.get("text"), dur):
+            excl_src.append(d)
+
+    if not excl_src:
+        return {"total_exclamations": 0, "dropped_count": 0,
+                "drop_rate": None, "dropped_examples": []}
+
+    # Check each source exclamation against target by time overlap
+    dropped = []
+    for sd in excl_src:
+        ss, se = sd.get("start_time"), sd.get("end_time")
+        if ss is None or se is None:
+            dropped.append(sd)
+            continue
+        covered = False
+        for td in target_dialogs:
+            ts, te = td.get("start_time"), td.get("end_time")
+            if ts is None or te is None:
+                continue
+            if max(0.0, min(se, te) - max(ss, ts)) >= 0.05:
+                covered = True
+                break
+        if not covered:
+            dropped.append(sd)
+
+    n_total   = len(excl_src)
+    n_dropped = len(dropped)
+    return {
+        "total_exclamations": n_total,
+        "dropped_count":      n_dropped,
+        "drop_rate":          round(n_dropped / n_total, 3) if n_total else None,
+        "dropped_examples":   [d.get("text","") for d in dropped[:10]],
+    }
+
+
 def honorific_check(dialogs, tgt_lang_code):
     """
     Scan all dialog texts for honorific markers.

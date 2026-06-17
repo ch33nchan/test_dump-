@@ -304,6 +304,12 @@
           "error": "'ModuleDict' object has no attribute 'compute_features'"
         }
       ]
+    },
+    "__excl_stats__": {
+      "total_exclamations": 1,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:002": {
@@ -450,6 +456,12 @@
       "grammar": null,
       "blaser": 3.6782214641571045,
       "pause_align": 0.5
+    },
+    "__excl_stats__": {
+      "total_exclamations": 1,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:003": {
@@ -602,6 +614,12 @@
       "grammar": 21,
       "blaser": 2.8141942024230957,
       "pause_align": 0.5
+    },
+    "__excl_stats__": {
+      "total_exclamations": 1,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:004": {
@@ -742,6 +760,14 @@
       "grammar": 22.2,
       "blaser": 2.601295232772827,
       "pause_align": 0.5
+    },
+    "__excl_stats__": {
+      "total_exclamations": 3,
+      "dropped_count": 1,
+      "drop_rate": 0.333,
+      "dropped_examples": [
+        "हैं।"
+      ]
     }
   },
   "2bcdfe58:005": {
@@ -876,6 +902,12 @@
       "grammar": 21.5,
       "blaser": 2.745310068130493,
       "pause_align": 0.801
+    },
+    "__excl_stats__": {
+      "total_exclamations": 0,
+      "dropped_count": 0,
+      "drop_rate": null,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:006": {
@@ -998,6 +1030,12 @@
       "grammar": 27.9,
       "blaser": 2.87312650680542,
       "pause_align": 0.799
+    },
+    "__excl_stats__": {
+      "total_exclamations": 0,
+      "dropped_count": 0,
+      "drop_rate": null,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:007": {
@@ -1150,6 +1188,12 @@
       "grammar": 19.6,
       "blaser": 3.3735098838806152,
       "pause_align": 0.9
+    },
+    "__excl_stats__": {
+      "total_exclamations": 2,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:008": {
@@ -1320,6 +1364,12 @@
       "grammar": null,
       "blaser": 3.5803475379943848,
       "pause_align": 1.0
+    },
+    "__excl_stats__": {
+      "total_exclamations": 6,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:009": {
@@ -1430,6 +1480,12 @@
       "grammar": 27.2,
       "blaser": 3.2843918800354004,
       "pause_align": 0.822
+    },
+    "__excl_stats__": {
+      "total_exclamations": 2,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:010": {
@@ -1624,6 +1680,14 @@
       "grammar": 33.6,
       "blaser": 2.845764636993408,
       "pause_align": 0.5
+    },
+    "__excl_stats__": {
+      "total_exclamations": 2,
+      "dropped_count": 1,
+      "drop_rate": 0.5,
+      "dropped_examples": [
+        "दे"
+      ]
     }
   },
   "2bcdfe58:011": {
@@ -1704,6 +1768,12 @@
       "grammar": 24.3,
       "blaser": 2.703853130340576,
       "pause_align": 0.77
+    },
+    "__excl_stats__": {
+      "total_exclamations": 1,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:012": {
@@ -1808,6 +1878,12 @@
       "grammar": 26.4,
       "blaser": 3.450185775756836,
       "pause_align": 0.335
+    },
+    "__excl_stats__": {
+      "total_exclamations": 1,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:013": {
@@ -2014,6 +2090,12 @@
       "utmos": 2.511,
       "grammar": 25.7,
       "pause_align": 0.787
+    },
+    "__excl_stats__": {
+      "total_exclamations": 5,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:014": {
@@ -2118,6 +2200,14 @@
       "grammar": 25.2,
       "blaser": 2.238112688064575,
       "pause_align": 0.479
+    },
+    "__excl_stats__": {
+      "total_exclamations": 2,
+      "dropped_count": 1,
+      "drop_rate": 0.5,
+      "dropped_examples": [
+        "येस!"
+      ]
     }
   },
   "2bcdfe58:015": {
@@ -2199,6 +2289,12 @@
       "utmos": 3.109,
       "grammar": 41.2,
       "pause_align": 0.632
+    },
+    "__excl_stats__": {
+      "total_exclamations": 0,
+      "dropped_count": 0,
+      "drop_rate": null,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:016": {
@@ -2291,6 +2387,12 @@
       "grammar": 24.9,
       "blaser": 3.826472759246826,
       "pause_align": 0.615
+    },
+    "__excl_stats__": {
+      "total_exclamations": 1,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:017": {
@@ -2365,6 +2467,12 @@
       "grammar": 14,
       "blaser": 3.3434345722198486,
       "pause_align": 1.0
+    },
+    "__excl_stats__": {
+      "total_exclamations": 2,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:018": {
@@ -2505,6 +2613,12 @@
       "grammar": 17.3,
       "blaser": 3.2044949531555176,
       "pause_align": 0.5
+    },
+    "__excl_stats__": {
+      "total_exclamations": 0,
+      "dropped_count": 0,
+      "drop_rate": null,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:019": {
@@ -2603,6 +2717,12 @@
       "grammar": 40.4,
       "blaser": 3.777233600616455,
       "pause_align": 0.771
+    },
+    "__excl_stats__": {
+      "total_exclamations": 0,
+      "dropped_count": 0,
+      "drop_rate": null,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:020": {
@@ -2767,6 +2887,12 @@
       "grammar": 15.2,
       "blaser": 2.5962905883789062,
       "pause_align": 0.809
+    },
+    "__excl_stats__": {
+      "total_exclamations": 1,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:021": {
@@ -2853,6 +2979,12 @@
       "grammar": 20.6,
       "blaser": 3.2140145301818848,
       "pause_align": 0.968
+    },
+    "__excl_stats__": {
+      "total_exclamations": 2,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:022": {
@@ -2957,6 +3089,12 @@
       "grammar": 15.7,
       "blaser": 3.0601491928100586,
       "pause_align": 0.5
+    },
+    "__excl_stats__": {
+      "total_exclamations": 2,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:023": {
@@ -3061,6 +3199,12 @@
       "grammar": 14.6,
       "blaser": 2.47971248626709,
       "pause_align": 0.5
+    },
+    "__excl_stats__": {
+      "total_exclamations": 0,
+      "dropped_count": 0,
+      "drop_rate": null,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:024": {
@@ -3164,6 +3308,12 @@
       "utmos": 2.538,
       "grammar": 18.5,
       "pause_align": 0.726
+    },
+    "__excl_stats__": {
+      "total_exclamations": 0,
+      "dropped_count": 0,
+      "drop_rate": null,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:025": {
@@ -3231,6 +3381,12 @@
       "utmos": 3.738,
       "grammar": 26.3,
       "pause_align": 0.247
+    },
+    "__excl_stats__": {
+      "total_exclamations": 0,
+      "dropped_count": 0,
+      "drop_rate": null,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:026": {
@@ -3335,6 +3491,12 @@
       "grammar": 23,
       "blaser": 3.008823871612549,
       "pause_align": 1.0
+    },
+    "__excl_stats__": {
+      "total_exclamations": 1,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:027": {
@@ -3469,6 +3631,12 @@
       "grammar": 16.5,
       "blaser": 3.4814085960388184,
       "pause_align": 1.0
+    },
+    "__excl_stats__": {
+      "total_exclamations": 2,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:028": {
@@ -3561,6 +3729,12 @@
       "grammar": 13.9,
       "blaser": 2.8078534603118896,
       "pause_align": 1.0
+    },
+    "__excl_stats__": {
+      "total_exclamations": 2,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:029": {
@@ -3713,6 +3887,12 @@
       "grammar": 19.1,
       "blaser": 3.7855095863342285,
       "pause_align": 0.5
+    },
+    "__excl_stats__": {
+      "total_exclamations": 0,
+      "dropped_count": 0,
+      "drop_rate": null,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:030": {
@@ -3793,6 +3973,12 @@
       "grammar": 31.5,
       "blaser": 3.206498622894287,
       "pause_align": 0.858
+    },
+    "__excl_stats__": {
+      "total_exclamations": 1,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:031": {
@@ -3873,6 +4059,12 @@
       "grammar": 33.9,
       "blaser": 3.5727200508117676,
       "pause_align": 0.763
+    },
+    "__excl_stats__": {
+      "total_exclamations": 1,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:032": {
@@ -4055,6 +4247,12 @@
       "grammar": 32,
       "blaser": 2.8638851642608643,
       "pause_align": 0.918
+    },
+    "__excl_stats__": {
+      "total_exclamations": 3,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   },
   "2bcdfe58:033": {
@@ -4165,6 +4363,12 @@
       "grammar": 25.8,
       "blaser": 2.9264707565307617,
       "pause_align": 0.854
+    },
+    "__excl_stats__": {
+      "total_exclamations": 4,
+      "dropped_count": 0,
+      "drop_rate": 0.0,
+      "dropped_examples": []
     }
   }
 }

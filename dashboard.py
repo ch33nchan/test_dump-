@@ -7,6 +7,7 @@ from eval_metrics import (
     verify_voice_assignment, voice_consistency_score,
     extract_emotion_tags, emotion_tag_coverage,
     honorific_check, named_entity_consistency,
+    exclamation_drop_rate, is_exclamation,
     find_script_errors as _find_script_errors_eval,
     WRONG_SCRIPT_BLOCKS_EVAL,
     compute_7cat_score, SONAR_LANG_CODES,
@@ -23,6 +24,10 @@ CONTAINER      = st.secrets.get("AZURE_CONTAINER",   "auto-dubbing")
 QC_STORE       = os.path.join(os.path.dirname(__file__), "qc_scores.json")
 MMS_MODEL      = "facebook/mms-1b-fl102"
 PIPELINE_CACHE = os.path.join(os.path.dirname(__file__), "pipeline_cache.json")
+
+SHOW_NAMES = {
+    "2bcdfe58": "Bhoori Bhojanam (Telugu) — Production",
+}
 
 # Load pre-baked pipeline data (no Azure needed for display)
 @st.cache_resource
@@ -472,6 +477,24 @@ def compute_scores(dialogs, aq_results, speech_results,
     # use Telugu/Indic character name strings from pipeline text
     ne_score, ne_issues = named_entity_consistency(dialogs, char_names)
 
+    # ── Exclamation drop rate — read from cache if pre-computed ───────────
+    # Falls back to live computation if not cached.
+    _cached_excl = speech_results.get("__excl_stats__")
+    if _cached_excl:
+        excl_stats = _cached_excl
+    else:
+        src_dialogs_list = [
+            {"index": d["id"], "start_time": d.get("start_time"), "end_time": d.get("end_time"),
+             "text": d.get("source_text", "")}
+            for d in dialogs
+        ]
+        tgt_dialogs_list = [
+            {"index": d["id"], "start_time": d.get("start_time"), "end_time": d.get("end_time"),
+             "text": d.get("pipeline_text", "")}
+            for d in dialogs
+        ]
+        excl_stats = exclamation_drop_rate(src_dialogs_list, tgt_dialogs_list)
+
     # ── Build scorecard ────────────────────────────────────────────────────
     cat = compute_7cat_score(
         iso_score              = iso_ep,
@@ -519,6 +542,20 @@ def compute_scores(dialogs, aq_results, speech_results,
         issues.append({"sev": "INFO", "dim": "Coverage",
             "msg": f"Editor corrections available for {n_reviewed}/{N} dialogs. "
                    f"Translation score partial — {N-n_reviewed} dialogs unreviewed."})
+    if excl_stats.get("total_exclamations", 0) > 0:
+        n_excl  = excl_stats["total_exclamations"]
+        n_drop  = excl_stats["dropped_count"]
+        rate    = excl_stats["drop_rate"]
+        ex_list = excl_stats.get("dropped_examples", [])
+        if n_drop > 0:
+            ex_str  = "  ".join(f'"{t}"' for t in ex_list[:5]) if ex_list else ""
+            sev     = "HIGH" if rate and rate >= 0.5 else "MEDIUM"
+            issues.append({"sev": sev, "dim": "Exclamation Drops",
+                "msg": f"{n_drop}/{n_excl} short exclamatory fillers dropped by pipeline "
+                       f"({int((rate or 0)*100)}% drop rate). "
+                       f"These are very short segments (< 0.6s) or known filler tokens "
+                       f"(啊/哎/अरे/ah/oh) removed during episode refinement. "
+                       + (f"Examples: {ex_str}" if ex_str else "")})
     if not blaser_vals:
         issues.append({"sev": "INFO", "dim": "Translation",
             "msg": "BLASER-2.0-QE not computed yet. Run Speech Quality tab."})
@@ -527,14 +564,25 @@ def compute_scores(dialogs, aq_results, speech_results,
             "msg": "UTMOS22 not computed yet. Run Speech Quality tab."})
     issues.sort(key=lambda x: {"HIGH":0,"MEDIUM":1,"INFO":2}[x["sev"]])
 
+
+    # Exclamation retention as a 0–100 score
+    n_excl_total = excl_stats.get("total_exclamations", 0)
+    n_excl_drop  = excl_stats.get("dropped_count", 0)
+    if n_excl_total > 0:
+        excl_retention = round((1 - n_excl_drop / n_excl_total) * 100, 1)
+    else:
+        excl_retention = None  # no exclamations in source — not applicable
+
     return {
         **cat, "N": N,
-        "timing_pass": timing_pass,
-        "n_overflow":  len(overflow_dialogs),
+        "timing_pass":    timing_pass,
+        "n_overflow":     len(overflow_dialogs),
         "n_heavy_rephrase": len(heavy_rep),
-        "n_reviewed":  n_reviewed,
-        "n_corrected": sum(1 for d in reviewed if d["was_edited"]),
+        "n_reviewed":     n_reviewed,
+        "n_corrected":    sum(1 for d in reviewed if d["was_edited"]),
         "iso_per_dialog": iso_map,
+        "excl_stats":     excl_stats,
+        "excl_retention": excl_retention,
         "issues": issues,
         "src_lang": src_lang_code, "tgt_lang": tgt_lang_code,
     }
@@ -554,14 +602,39 @@ def save_qc(sid, ep, qc):
 # ── sidebar ───────────────────────────────────────────────────────────────────
 with st.sidebar:
     st.markdown("### Dubbing Evals")
-    show_id = st.text_input("Show ID", "2bcdfe58")
+    st.caption("Quality evaluation for auto-dubbed video. "
+               "Select a show and episode to view scores.")
+
+    show_id = st.text_input(
+        "Show ID",
+        "2bcdfe58",
+        help="Internal pipeline show identifier. Each show has a unique hex ID."
+    )
+    show_name = SHOW_NAMES.get(show_id, "")
+    if show_name:
+        st.caption(f"**{show_name}**")
+
     if show_id:
         with st.spinner(""):
             try:    eps = list_episodes(show_id)
             except: eps = []
-        episode = st.selectbox("Episode", eps or ["001"])
+        episode = st.selectbox(
+            "Episode",
+            eps or ["001"],
+            help="Each episode is evaluated independently. "
+                 "Scores are pre-computed — switch freely."
+        )
     else:
         episode = "001"
+
+    st.divider()
+    st.caption("**How to read this dashboard**")
+    st.caption("• **Show Overview** — compare all episodes at a glance")
+    st.caption("• **Issues** — what needs fixing, in order of severity")
+    st.caption("• **All Dialogs** — per-line breakdown with audio")
+    st.caption("• **Speech Quality** — run new automated evals")
+    st.caption("• **Human QC** — enter rater scores per dialog")
+    st.caption("Hover **?** on any score for an explanation.")
 
 if not (show_id and episode): st.stop()
 
@@ -616,11 +689,12 @@ scores = compute_scores(dialogs, aq_results, speech_results,
 src_lang = src_lang_name
 
 # ── header ────────────────────────────────────────────────────────────────────
-st.markdown(f"## Show `{show_id}` — Episode `{episode}`")
+_show_display = SHOW_NAMES.get(show_id, f"`{show_id}`")
+st.markdown(f"## {_show_display} — Episode {episode}")
 st.caption(
-    f"Source language: **{src_lang}** — Target language (auto-detected): **{lang_name}** (`{lang_code}`)  "
-    f"·  **{scores['N']} dialogs** (full episode pipeline output)  "
-    f"·  Editor reviewed {scores['n_reviewed']}/{scores['N']} dialogs"
+    f"Source: **{src_lang}** → Target: **{lang_name}** (`{lang_code}`)  "
+    f"·  **{scores['N']} dialogs**  "
+    f"·  Editor reviewed {scores['n_reviewed']}/{scores['N']}"
 )
 
 # ── Overall score ─────────────────────────────────────────────────────────────
@@ -750,6 +824,32 @@ for col, (key, label, sublabel, weight) in zip(cols, cats):
         delta_color="off",
         help=CATEGORY_HELP.get(key, ""),
     )
+
+
+# ── Exclamation retention row ─────────────────────────────────────────────────
+excl_ret   = scores.get("excl_retention")
+excl_stats = scores.get("excl_stats", {})
+n_excl     = excl_stats.get("total_exclamations", 0)
+n_drop     = excl_stats.get("dropped_count", 0)
+ret_lbl, ret_clr = score_label(excl_ret)
+with st.container(border=True):
+    excl_col, formula_col = st.columns([1, 1])
+    with excl_col:
+        st.metric(
+            label="Exclamation Retention",
+            value=f"{fmt(excl_ret)}/100" if excl_ret is not None else "N/A",
+            delta=f"{n_excl - n_drop}/{n_excl} fillers kept" if n_excl > 0 else "no fillers in source",
+            delta_color="off",
+            help=(
+                "Fraction of short exclamatory vocal beats (啊/哎/अरे/ah/oh) "
+                "that survived to the dubbed output. 100 = nothing dropped. "
+                "Low score = pipeline is silently removing performance beats during episode refinement. "
+                "N/A = no exclamatory segments in source."
+            ),
+        )
+    with formula_col:
+        st.write("")
+        st.latex(r"\frac{\text{total} - \text{dropped}}{\text{total}} \times 100")
 
 st.write("")
 
@@ -929,9 +1029,8 @@ with tab_overview:
 # ════════════════════════════════════════════════════════════════════════════════
 with tab_issues:
     with st.expander("Scoring reference"):
+        st.markdown("**7-Category scorecard** (Dubbing Rubric–aligned)")
         st.markdown("""
-**7-Category scorecard** (Dubbing Rubric–aligned)
-
 | Category | Weight | Metric |
 |---|---|---|
 | Translation | 20% | BLASER-2.0-QE / editor correction rate |
@@ -941,9 +1040,24 @@ with tab_issues:
 | Timing | 20% | IsoChronoMeter + pause alignment |
 | Clarity | 10% | UTMOS clarity component |
 | Multispeaker | 10% | Voice consistency across speakers |
-
-**Indic expansion expectations:** Hindi→Telugu 1.1–1.5x · Chinese→Telugu 1.5–2.5x · Hindi→Tamil 1.15–1.55x
 """)
+        st.markdown("**Formulas**")
+
+        st.markdown("*IsoChronoMeter* — per dialog, averaged across N:")
+        st.latex(r"\text{IsoChronoMeter} = \frac{1}{N} \sum_{i=1}^{N} \max\!\left(0,\ 1 - \frac{|t_i - w_i|}{w_i}\right) \times 100")
+        st.caption("tᵢ = TTS duration ms · wᵢ = source window ms")
+
+        st.markdown("*WEQS (editor correction blend)*:")
+        st.latex(r"\text{WEQS} = 1 - \frac{\sum_{i} \text{weight}_i}{N} \qquad \text{then blended: }\ 0.65 \times \text{BLASER} + 0.35 \times \text{WEQS}")
+
+        st.markdown("*BLASER-2.0-QE → 0–100*:")
+        st.latex(r"\text{Translation score} = \frac{\text{BLASER}_\text{raw} - 1}{4} \times 100")
+        st.caption("BLASER raw is on a 1–5 scale calibrated against human DA judgments")
+
+        st.markdown("*Exclamation Retention*:")
+        st.latex(r"\text{Exclamation Retention} = \frac{\text{total} - \text{dropped}}{\text{total}} \times 100")
+
+        st.markdown("*Indic expansion expectations:* Hindi→Telugu 1.1–1.5x · Chinese→Telugu 1.5–2.5x · Hindi→Tamil 1.15–1.55x")
 
     for sev_label, sev_key in [("Critical issues","HIGH"),("Warnings","MEDIUM"),("Info","INFO")]:
         items = [i for i in scores["issues"] if i["sev"] == sev_key]
@@ -1062,12 +1176,15 @@ with tab_dialogs:
         r_badge = badge(
             "FAIL" if d["n_attempts"]>=4 else ("WARN" if d["n_attempts"]>=2 else "OK")
         )
-        ed_note = "  [edited]" if d["was_edited"] else ""
-        ov_note = f"  overflow +{d['overflow_ms']}ms" if d["overflow_ms"]>0 else ""
-        sp_note = f"  speed {d['speed_factor']:.2f}x" if d["speed_factor"]>1.3 else ""
+        src_dur  = (d.get("end_time") or 0) - (d.get("start_time") or 0)
+        is_excl  = is_exclamation(d.get("source_text"), src_dur if src_dur > 0 else None)
+        ed_note  = "  [edited]" if d["was_edited"] else ""
+        ov_note  = f"  overflow +{d['overflow_ms']}ms" if d["overflow_ms"]>0 else ""
+        sp_note  = f"  speed {d['speed_factor']:.2f}x" if d["speed_factor"]>1.3 else ""
+        ex_note  = "  [exclamation]" if is_excl else ""
 
         with st.expander(
-            f"Dialog {d['id']}{ed_note}{ov_note}{sp_note}",
+            f"Dialog {d['id']}{ed_note}{ov_note}{sp_note}{ex_note}",
             expanded=(d["overflow_ms"]>0 or d["script_errors"] or d["was_edited"])
         ):
             st.markdown(

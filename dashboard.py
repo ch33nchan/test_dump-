@@ -26,7 +26,7 @@ MMS_MODEL      = "facebook/mms-1b-fl102"
 PIPELINE_CACHE = os.path.join(os.path.dirname(__file__), "pipeline_cache.json")
 
 SHOW_NAMES = {
-    "2bcdfe58": "Bhoori Bhojanam (Telugu) — Production",
+    "2bcdfe58": "Bhoori Bhojanam",
     "177f8954": "Show 177f8954 (Chinese\u2192Telugu) \u2014 Production",
     "2818da7d": "Show 2818da7d (Hindi\u2192Bengali) \u2014 Production",
     "7531eeeb": "Show 7531eeeb (Chinese\u2192Bengali) \u2014 Production",
@@ -721,8 +721,8 @@ _show_display = SHOW_NAMES.get(show_id, f"`{show_id}`")
 st.markdown(f"## {_show_display} — Episode {episode}")
 st.caption(
     f"Source: **{src_lang}** → Target: **{lang_name}** (`{lang_code}`)  "
-    f"·  **{scores['N']} dialogs**  "
-    f"·  Editor reviewed {scores['n_reviewed']}/{scores['N']}"
+    f"·  **{scores.get('N', 0)} dialogs**  "
+    f"·  Editor reviewed {scores.get('n_reviewed', 0)}/{scores.get('N', 0)}"
 )
 
 # ── Overall score ─────────────────────────────────────────────────────────────
@@ -739,9 +739,9 @@ st.markdown(
     f'<span style="color:#555;font-size:12px;margin-left:20px">'
     f'{src_lang} → {lang_name}  ·  '
     f'expected expansion {lo_exp:.1f}–{hi_exp:.1f}x  ·  '
-    f'{scores["timing_pass"]}/{scores["N"]} fit timing  ·  '
+    f'{scores["timing_pass"]}/{scores.get('N', 0)} fit timing  ·  '
     f'{scores["n_overflow"]} overflow  ·  '
-    f'editor reviewed {scores["n_reviewed"]}/{scores["N"]}'
+    f'editor reviewed {scores.get('n_reviewed', 0)}/{scores.get('N', 0)}'
     f'</span></div>',
     unsafe_allow_html=True
 )
@@ -1185,9 +1185,9 @@ with tab_issues:
 # ════════════════════════════════════════════════════════════════════════════════
 with tab_dialogs:
     st.caption(
-        f"All {scores['N']} dialogs from the full pipeline output. "
+        f"All {scores.get('N', 0)} dialogs from the full pipeline output. "
         f"Dialogs marked [edited] were reviewed and corrected by the editor. "
-        f"The other {scores['N'] - scores['n_reviewed']} have not been reviewed — "
+        f"The other {scores.get('N', 0) - scores.get('n_reviewed', 0)} have not been reviewed — "
         f"pipeline text shown as-is."
     )
 

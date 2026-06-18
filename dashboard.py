@@ -25,6 +25,14 @@ QC_STORE       = os.path.join(os.path.dirname(__file__), "qc_scores.json")
 MMS_MODEL      = "facebook/mms-1b-fl102"
 PIPELINE_CACHE = os.path.join(os.path.dirname(__file__), "pipeline_cache.json")
 
+def wav_url(show_id: str, episode: str, dialog_id) -> str | None:
+    """Direct SAS URL for a per-dialog TTS WAV — works without Azure client."""
+    if not SAS_TOKEN:
+        return None
+    path = (f"shows/dubbing/{show_id}/episodes/{episode}"
+            f"/intermediate/tts/per_dialog/{dialog_id}.wav")
+    return f"{ACCOUNT_URL}/{CONTAINER}/{path}?{SAS_TOKEN}"
+
 SHOW_NAMES = {
     "2bcdfe58": "Bhoori Bhojanam",
     "177f8954": "Chinese → Telugu (177f8954)",
@@ -1235,18 +1243,21 @@ with tab_dialogs:
                         unsafe_allow_html=True
                     )
 
-                st.markdown("**Pipeline output**")
+                st.markdown("**Pipeline output (dubbed)**")
                 st.markdown(
                     f'<div style="background:#111;border-radius:6px;padding:10px;'
-                    f'font-size:14px;line-height:1.7">{hl(d["pipeline_text"])}</div>',
+                    f'font-size:14px;line-height:1.7">{hl(d["pipeline_text"], lang_code)}</div>',
                     unsafe_allow_html=True
                 )
+                _url = wav_url(show_id, episode, d["id"])
+                if _url:
+                    st.audio(_url, format="audio/wav")
 
                 if d["was_edited"] and d["editor_text"]:
                     st.markdown("**Editor correction**")
                     st.markdown(
                         f'<div style="background:#0a1f0a;border:1px solid #2a4a2a;border-radius:6px;'
-                        f'padding:10px;font-size:14px;line-height:1.7">{hl(d["editor_text"])}</div>',
+                        f'padding:10px;font-size:14px;line-height:1.7">{hl(d["editor_text"], lang_code)}</div>',
                         unsafe_allow_html=True
                     )
 
@@ -1316,12 +1327,17 @@ with tab_dialogs:
                                         "Good: > 0.7.")
 
             with cr:
-                if d["wav"]:
-                    st.markdown("**Pipeline TTS audio**")
+                st.markdown("**Pipeline TTS audio**")
+                url = wav_url(show_id, episode, d["id"])
+                if url:
+                    st.audio(url, format="audio/wav")
+                elif d["wav"] and AZURE_AVAILABLE:
                     try:
                         st.audio(fetch_bytes(d["wav"]), format="audio/wav")
                     except Exception as e:
                         st.error(str(e))
+                else:
+                    st.caption("Audio unavailable — Azure credentials not configured.")
                 st.markdown("**Metadata**")
                 st.json({k:v for k,v in {
                     "dialog_id": d["id"],
@@ -1638,7 +1654,10 @@ with tab_hqc:
                         unsafe_allow_html=True
                     )
             with cr:
-                if d["wav"]:
+                url = wav_url(show_id, episode, d["id"])
+                if url:
+                    st.audio(url, format="audio/wav")
+                elif d["wav"] and AZURE_AVAILABLE:
                     try:    st.audio(fetch_bytes(d["wav"]), format="audio/wav")
                     except: pass
 

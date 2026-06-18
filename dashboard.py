@@ -1216,7 +1216,7 @@ with tab_dialogs:
 
         with st.expander(
             f"Dialog {d['id']}{ed_note}{ov_note}{sp_note}{ex_note}",
-            expanded=(d["overflow_ms"]>0 or d["script_errors"] or d["was_edited"])
+            expanded=bool(d["overflow_ms"]>0 or d["script_errors"] or d["was_edited"])
         ):
             st.markdown(
                 f"Timing: {t_badge}&nbsp;&nbsp;Audio: {a_badge}&nbsp;&nbsp;"

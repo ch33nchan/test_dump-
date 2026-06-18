@@ -33,7 +33,7 @@ SHOW_NAMES = {
 }
 
 # Load pre-baked pipeline data (no Azure needed for display)
-@st.cache_resource
+@st.cache_data(ttl=300)
 def load_pipeline_cache():
     try:
         return json.load(open(PIPELINE_CACHE, encoding="utf-8"))

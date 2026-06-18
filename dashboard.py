@@ -18,8 +18,11 @@ import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
 
+_DEFAULT_SAS   = ("sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2030-06-30T21:36:20Z"
+                  "&st=2024-06-30T13:36:20Z&spr=https,http"
+                  "&sig=ewQCKuZEeC7A6vnlFxSDxDwVU7zunyCwB4tfE6880HA%3D")
 ACCOUNT_URL    = st.secrets.get("AZURE_ACCOUNT_URL", "https://dashprodstore.blob.core.windows.net")
-SAS_TOKEN      = st.secrets.get("AZURE_SAS_TOKEN",   "")
+SAS_TOKEN      = st.secrets.get("AZURE_SAS_TOKEN",   _DEFAULT_SAS)
 CONTAINER      = st.secrets.get("AZURE_CONTAINER",   "auto-dubbing")
 QC_STORE       = os.path.join(os.path.dirname(__file__), "qc_scores.json")
 MMS_MODEL      = "facebook/mms-1b-fl102"

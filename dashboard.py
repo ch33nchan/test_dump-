@@ -1091,7 +1091,7 @@ with tab_issues:
         st.markdown("*Indic expansion expectations:* Hindi→Telugu 1.1–1.5x · Chinese→Telugu 1.5–2.5x · Hindi→Tamil 1.15–1.55x")
 
     for sev_label, sev_key in [("Critical issues","HIGH"),("Warnings","MEDIUM"),("Info","INFO")]:
-        items = [i for i in scores["issues"] if i["sev"] == sev_key]
+        items = [i for i in scores.get("issues", []) if i["sev"] == sev_key]
         if not items: continue
         st.markdown(f"#### {sev_label}")
         for i in items:

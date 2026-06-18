@@ -141,9 +141,11 @@ def episode_full_score(show_id, episode):
     """Full EQI from pipeline_cache.json + speech_cache.json. No Azure needed."""
     pc = load_pipeline_cache()
     ep_data = pc.get(show_id, {}).get(episode, {})
+    if not isinstance(ep_data, dict):
+        return None
     fit_raw  = ep_data.get("fit")
     attempts = ep_data.get("attempts") or {}
-    if not fit_raw: return None
+    if not isinstance(fit_raw, dict): return None
     dialogs = fit_raw.get("dialogs", [])
     N = len(dialogs)
     if not N: return None
@@ -221,7 +223,8 @@ def load_show_overview(show_id, episodes):
 def load_pipeline(show_id, episode):
     # read from local pipeline_cache.json first — no Azure needed
     pc       = load_pipeline_cache()
-    ep_data  = pc.get(show_id, {}).get(episode, {})
+    raw      = pc.get(show_id, {}).get(episode)
+    ep_data  = raw if isinstance(raw, dict) else {}
     wav_paths = {}
 
     if AZURE_AVAILABLE:
